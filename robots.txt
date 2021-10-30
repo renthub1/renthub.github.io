@@ -4,4 +4,4 @@ Disallow: /images/
 Disallow: /pics/
 Disallow: /icons/
 Disalllow: /style.css/
-Disallow: /mail.php/
+Disallow: /Email.php/
