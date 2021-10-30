@@ -1,6 +1,7 @@
 User-agent: *
-Disallow: /renthub.zip
-allow: /pics/
-
-
-
+Disallow: /cgi-bin/
+Disallow: /images/
+Disallow: /pics/
+Disallow: /icons/
+Disalllow: /style.css/
+Disallow: /mail.php/
