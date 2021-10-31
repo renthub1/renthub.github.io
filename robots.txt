@@ -3,5 +3,5 @@ Disallow: /cgi-bin/
 Disallow: /images/
 Disallow: /pics/
 Disallow: /icons/
-Disalllow: /style.css/
+Disallow: /style.css/
 Disallow: /Email.php/
