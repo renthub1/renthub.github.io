@@ -255,7 +255,7 @@ html{
     opacity: .85;
 }
 #slider{
-    background-image: url('road.jpg');
+    background-image: url('road.webp');
     background-position: center;
     background-size: cover;
     width: 100%;
