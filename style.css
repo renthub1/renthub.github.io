@@ -91,8 +91,6 @@ html{
 }
 #box{
     flex-basis: 27rem;
-    /* border:0px solid rgb(255, 255, 255); */
-    /* margin:7rem 0 0 12rem; */
     background-image:linear-gradient(grey,#dcdde1);
     box-shadow: 2px 1px 9px black;
     opacity: .89;
@@ -151,9 +149,6 @@ html{
 }
 .box1{
     width: 100%;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; */
     margin: auto;
 }
 .box1 img{
@@ -208,7 +203,6 @@ html{
     line-height: 1.3;
 }
 .box2{
-    /* border: .1rem solid grey; */
     box-shadow: 2px 1px 5px black;
     border-radius: 50%;
     background-color: grey;
@@ -246,7 +240,6 @@ html{
     margin: auto;
 }
 #fourth hr{
-    /* size: 10rem; */
     height: .8rem;
     border-radius: 8%;
     width: 70%;
@@ -263,7 +256,6 @@ html{
     position: relative;
 }
 #slider img{
-    /* margin-top: -10.8rem; */
     width: 15rem;
     height: 233px;
     position: absolute;
@@ -278,16 +270,6 @@ html{
     from{right: 0;}
     to{right: 85%;}
 }
-/* .range > h5{
-    padding-left: 17rem;
-    color: white;
-    column-count: 7;                                
-    column-rule:groove;
-    text-align: justify;
-    column-gap: 17rem;
-    word-spacing: 1.2rem;
-    text-transform: capitalize;
-} */
 #fiveth{
     width: 100%;
     padding-top: 4rem;
@@ -319,7 +301,6 @@ html{
     border-radius: 30%;
     text-align: center;
     margin: 2rem 1.8rem;
-    /* background-color: #836e6e; */
     padding: 1.2rem;
     letter-spacing: .2rem;
     line-height: 2;
