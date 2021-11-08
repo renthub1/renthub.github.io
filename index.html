@@ -46,12 +46,13 @@ rent activa for a month. ">
     })(window, document, "clarity", "script", "6nrqztn2bn");
 </script>
     </head>
-        <body>
+        <body onload="myfunction()">
             <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T82RHXK"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
             <div id="header">
+                <div id="loader"></div>
                 <div id="head">
                     <div id="logo">
                         <img src="sx.png" alt="renthub 
@@ -316,6 +317,11 @@ function icon(){
         e.className = 'menu_list';
     }
 }
+
+var preloader=document.getElementById("loader");
+function myfunction(){
+    preloader.style.display='none';
+};
 </script>
 <script type="application/ld+json">
     {
