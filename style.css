@@ -11,7 +11,7 @@ html{
 #header{
     width: 100%;
     height: auto;
-    background-image: url('1.webp');
+    background-image: url('1.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -213,11 +213,12 @@ html{
 .box2{
     box-shadow: 2px 1px 5px black;
     border-radius: 50%;
-    background-color: grey;
+    background-color: #d35400;
     margin: 1rem 1.2rem;
     padding: 1rem 2rem;
     text-align: center;
     flex-basis: 28rem;
+    opacity: .89;
 }
 .box2 p{
     font-size: 1.2rem;
@@ -335,6 +336,8 @@ html{
     box-shadow: 0 0 10px 5px white;
     border-radius: 20%;
     color: thistle;
+    transform: translateY(-20px);
+    transition: 0.3s;
 }
 .box6{
     box-shadow: 2px 1px 5px black;
