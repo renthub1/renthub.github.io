@@ -11,11 +11,14 @@ html{
 #header{
     width: 100%;
     height: auto;
-    background-image: url('1.jpg');
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url('1.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0); */
 }
 #loader{
@@ -86,6 +89,64 @@ html{
     font-size: 2rem!important;
     color: white;
 }
+.contain{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: #333;
+    overflow: hidden;
+}
+
+.contain .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.contain .clip.clip1{
+    background: url(1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
+} 
+
+.contain .clip.clip2{
+    background: url(4.jpg);
+    background-size: cover;
+    clip-path: polygon(50% 0, 100% 0, 60% 100%, 30% 100%);
+}
+
+.contain .clip.clip3{
+    background: url(c1.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.contain:hover .clip{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 100% 100%, 100% 57%, 100% 0);
+}
+
+.contain .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.contain .clip .content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 70%;
+    padding: 20px;
+    background: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.contain .clip:hover .content{
+    bottom: 0;
+    opacity: 1;
+}
 #container{
     width: 100%;
     display: flex;
@@ -95,7 +156,7 @@ html{
     padding-bottom: 2rem;
 
 }
-#container #box, #whatsapp{
+#contain #box, #whatsapp{
     margin: 1rem;
 }
 #box{
