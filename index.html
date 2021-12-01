@@ -26,6 +26,7 @@ rent activa for a month. ">
      crossorigin="anonymous"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" href= "icons/favicon.ico" type="image/x-icon"/>
@@ -54,62 +55,72 @@ rent activa for a month. ">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T82RHXK"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  <div id="header">              
-    <div id="loader"></div>
-                <div id="head">
-                    <div id="logo">
+  <div id="header" class="w-100 h-auto">              
+    <div id="loader" class="w-100 h-100 position-absolute "></div>
+                <div id="head" class="w-100 text-uppercase fs-5">
+                    <div id="logo" class="float-start text-center position-relative">
                         <img src="sx.png" alt="renthub 
                         bike rent logo">
                     </div>
-    <div id="menu" class="menu_list">
+    <div id="menu" class="menu_list rounded-pill float-start w-80 text-right">
         <ul>
-            <a href="#header"><li class="rounded-pill p-2">slide up</li></a>
-            <a href="#second"><li class="rounded-pill p-2">book</li></a>
-            <a href="#third"><li class="rounded-pill p-2">services/facilily</li></a>
-            <a href="#fourth"><li class="rounded-pill p-2">works</li></a>
-            <a href="#fiveth"><li class="rounded-pill p-2">reviews</li></a>
-            <a href="#sixth"><li class="rounded-pill p-2">blog</li></a>
-            <a href="#seventh"><li class="rounded-pill p-2">contact us</li></a>
+            <a class="text-white text-decoration-none" href="#header"><li class="rounded-pill p-2">slide up</li></a>
+            <a class="text-white text-decoration-none" href="#second"><li class="rounded-pill p-2">Renthub</li></a>
+            <a class="text-white text-decoration-none" href="#third"><li class="rounded-pill p-2">services/facilily</li></a>
+            <a class="text-white text-decoration-none" href="#fourth"><li class="rounded-pill p-2">works</li></a>
+            <a class="text-white text-decoration-none" href="#fiveth"><li class="rounded-pill p-2">reviews</li></a>
+            <a class="text-white text-decoration-none" href="#sixth"><li class="rounded-pill p-2">blog</li></a>
+            <a class="text-white text-decoration-none" href="#seventh"><li class="rounded-pill p-2">contact us</li></a>
         </ul>
     </div>
     <a onclick="icon()"><i class="material-icons">menu</i></a>
 </div>
-<div class="contain">
-    <div class="clip clip1">
-        <div class="content bg-primary text-white">
-            <h2 class="text-capitalize ms-3">what is renthub?</h2>
-            <p>Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent. Best price, no mess. The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price.</p>
-        </div>
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="11.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary">
+        <h5 class="display-2 text-capitalize" data-aos="slide-down"><strong>welcome to renthub</strong></h5>
+        <!-- <p class="fs-5">Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent. Best price, no mess. The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price.</p> -->
+      </div>
     </div>
-    <div class="clip clip2">
-        <div class="content bg-primary text-white">
-            <h2 class="text-capitalize ms-3">Our rental offers</h2>
-            <p>Rent on <strong>day basis</strong> or rent on <strong>monthly basis</strong> both are available. To book a vehicle from us or if you want to know more feel free contact us.
+    <div class="carousel-item">
+      <img src="5.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-primary">
+        <h5 class="fs-5">Our rental offers</h5>
+        <p class="fs-5">Rent on <strong>day basis</strong> or rent on <strong>monthly basis</strong> both are available. To book a vehicle from us or if you want to know more feel free contact us.
             Renthub provides you the best ride and comfortale prices.</p>
-        </div>
+      </div>
     </div>
-    <div class="clip clip3">
-        <div class="content bg-primary text-white">
-            <h2 class="text-capitalize ms-3">what do you need to book a vehicle from us?</h2>
-            <p>An original driving license photo or a pic and aadhar photo or a pic.</p>
-        </div>
+    <div class="carousel-item">
+      <img src="c1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-primary">
+        <h5 class="fs-5">what do you need to book a vehicle from us?</h5>
+        <p class="fs-5">An original driving license photo or a pic and aadhar photo or a pic.</p>
+      </div>
     </div>
+  </div>
 </div>
 </div>
 <div id="container">
-    <div id="box">
+    <div id="box" data-aos="flip-up" data-aos-offset="100">
         <hr>
         <h1>Renthub<br>
             (best bike rentals)
         </h1>
             <p>
-                Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent.Best price, no mess. The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price. Currently our services are available in Uttarakhand Dehradun state. Not just that renthub is the best dehradun bike on rent and scooty rent in dehradun, we provide different categories of bike rent dehradun. we will further provide delivery of bike rental dehradun. Reservations can be made only for immediate pickup within 15 minutes and only through our app.Our users experience a convenient, easy and quick ride and keep coming back. 
+                Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent.Best price,no mess.The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price.Currently our services are available in Dehradun Uttarakhand state.<!-- Not just that renthub is the best dehradun bike on rent and scooty rent in dehradun, -->we provide different categories of bike rent dehradun.we will further provide delivery of bike rental dehradun.  
     </p>
-    <div id="img1"><img src=pics/play.webp alt="google play icon"></div>
+    <div id="img1"><img src=pics/play.webp data-aos="zoom-in" alt="google play icon"></div>
     </div>
-    <img src="pics/renthub whatsapp4.webp" id="whatsapp" alt="whatsapp icon">
+    <img src="pics/renthub whatsapp4.webp" id="whatsapp" data-aos="flip-down" alt="whatsapp icon">
 </div>
-<div id="second">
+<div id="second" class="text-white">
     <div id="content1">
         <h4>our offer</h4>
         <p>
@@ -125,7 +136,7 @@ rent activa for a month. ">
                     <div class="scroller">
                     <h2>Honda activa 5g<br>
                     ₹550/day</h2>
-                    Helmets 2
+                    Helmets <span class="ps-5">2</span>
                     <hr>
                     Seats   2
                     <hr>
@@ -166,10 +177,10 @@ rent activa for a month. ">
             </div>
 </div>
 <div id="third">
-    <h1>Our services<br>(Best service of bike taxi in dehradun)
+    <h1 class="text-dark">Our services<br>(Best service of bike taxi in dehradun)
     </h1>
     <div id="content3">
-    <div class="box2">
+    <div class="box2 text-white" data-aos="slide-down">
 <img src="icons/scooter1.png" alt="scooter">
 <h2>vehicles<br>(Best bike rent near me)
     </h2>
@@ -177,7 +188,7 @@ rent activa for a month. ">
 
 </p>
 </div>
-<div class="box2">
+<div class="box2 text-white" data-aos="slide-down">
 <img src="icons/key.png" alt="key icon">
 <h2>Features<br>
     (Best bike rental near me)
@@ -186,7 +197,7 @@ rent activa for a month. ">
     If you book your ride from us, there is no hassle just search for rent activa or rent activa near me and then select renthub and install it and then book your ride from our app.
 </p>
 </div>
-<div class="box2">
+<div class="box2 text-white" data-aos="slide-down">
 <img src="icons/helmet.png" alt="helmet icon">
 <h2>Safe & secure<br>
     (best & safe bike rental service in dehradun)
@@ -195,7 +206,7 @@ rent activa for a month. ">
     Taking a vehicle from us is make you feel safer.
 </p>
 </div>
-<div class="box2">
+<div class="box2 text-white" data-aos="slide-down">
 <img src="icons/scooter.png" alt="scooter2">
 <h2>Best & better<br>
     (rent activa)
@@ -203,7 +214,7 @@ rent activa for a month. ">
 <p>
     We provide bestest and better vehicles, which are in good conditions. Just locate with best bike rent in dehradun.</p>
 </div>
-<div class="box2">
+<div class="box2 text-white" data-aos="slide-down">
 <img src="icons/booking.png" alt="booking icon">
 <h2>Booking<br>
     (rent activa near me)
@@ -214,7 +225,7 @@ rent activa for a month. ">
 </div>
 </div>
 <div id="fourth">
-    <div id="content4">
+    <div id="content4" class="text-white">
     <h1>How it works<br>
         (rent activa for a month)</h1>
         <p>Install our application from any market and upload your driving license, book your ride and enjoy. If you want to book a ride in renthub or search for renthub just search for bike on rent in dehradun near isbt, dehradun bike rental dehradun uttarakhand dehradun scooty rent, hire bike in dehradun, bike hire in dehradun, bike rent in dehradun near me, bike rent on dehradun and that's it and take care of yourself please.
@@ -229,7 +240,7 @@ rent activa for a month. ">
     </span> -->
 </div>
 <div id="fiveth">
-    <div id="content5">
+    <div id="content5" class="text-white">
     <h1>Customer Testimony<br>
         (best bike rent)</h1>
         <p>We would like to thanks our customers for choosing our services and sharing there experiences! Our customers who are well satisfied with our services! Our customers have awarded us with such beautiful awords like the best bike rent in dehradun by renthub, very good bike on rent from dehradun to mussoorie, service thank you, best bike on rent in dehradun near railway station, the best bike hire in dehradun i was afraid at taking the vehicles from here but it was very good thanks, bestest dehradun bike rentals near me service, with lot of drop points its easy and comfortable
@@ -237,42 +248,42 @@ rent activa for a month. ">
         </p>
         </div>
         <div id="box3">
-            <div class="box4">
+            <div class="box4" data-aos="zoom-out">
             <p>"I am a student and i needed a vehicles for my college work so i heard about this renthub services that they provide and i download there appication and booked a ride and it was very easy and also the prices were very cheap."
             </p>
             <img src="images/person_1.jpg" alt="customer 1">Mayank nautiyal
         </div>
-        <div class="box4">
+        <div class="box4" data-aos="zoom-out">
             <p>"Best place to bike rent at cheap price and they provide different kinds of rent bike and you can select yours."
             </p>
             <img src="images/person_4.jpg" alt="customer 2"><h5>Milind gurung</h5>
         </div>
-        <div class="box4">
+        <div class="box4" data-aos="zoom-out">
             <p>"Great service, very useful and affordable facility in this area!"</p>
             <img src="images/person_5.jpg" alt="customer 3"><h5>Gunjan juyal</h5>
         </div>
         </div>
 </div>
 <div id="sixth">
-    <h1>Our Blog</h1>
-        <p>
+    <h1 class="text-white">Our Blog</h1>
+        <p class="text-white">
             Places to visit in uttarakhand. when you want to take a trip in uttarakhand and not able to decide where to go. Don't worry we have some updated places for you every day. enjoy!
         </p>
         <div id="box5">
-            <div class="box6">
+            <div class="box6" data-aos="slide-up">
             <img src="images/img_1.webp" alt="car 1">
             <h3>The best bike rent in the entire planet</h3>
             <p>bike rent, harley davidson rental, bike rental near me, rent a car, Budget Rent a Car, bike rental in Dehradun.
             </p>    
             </div>
-            <div class="box6">
+            <div class="box6" data-aos="slide-up">
                 <img src="images/img_2.webp" alt="car 2">
                 <h3>The best car rent in the entire planet
                 </h3>
                 <p>bike hire in Rishikesh, cheapest bike rental in dehradun, bike rent in dehradun, bullet on rent in dehradun, bike on rent in dehradun.
                 </p>    
                 </div>
-                <div class="box6">
+                <div class="box6" data-aos="slide-up">
                     <img src="images/img_3.webp" alt="car3">
                     <h3>The best car rent in the entire planet
 
@@ -296,21 +307,21 @@ rent activa for a month. ">
 </div>
 <div id="seventh">
     <div id="last" class="text-center">
-<div id="content6" class="rounded-pill bg-secondary mb-4">
+<div id="content6" class="rounded-pill bg-secondary mb-4" data-aos="flip-right">
 <h2> follow us on</h2>
-<a href="https://www.facebook.com/renthub1" target="_blank"><img src="icons/facebook.png" alt="Facebook profile"></a>
-<a href="https://www.instagram.com/renthub_india/" target="_blank"><img src="icons/instagram.png" target="_blank" alt="Instagram profile"></a>
-<a href=" https://wa.me/message/5FVSRGYVBO3DP1" target="_blank"><img src="icons/whatsapp.png" alt="click to open chat with us"></a>
-<a href="https://g.page/r/CYi1Tsa1ZpiKEAE" target="_blank"><img src="icons/my-business.png" alt="see business on google"></a>
+<a href="https://www.facebook.com/renthub1" target="_blank"><img data-aos="fade-down" data-aos-duration="1000" src="icons/facebook.png" alt="Facebook profile"></a>
+<a href="https://www.instagram.com/renthub_india/" target="_blank"><img data-aos="fade-down" data-aos-duration="2000" src="icons/instagram.png" target="_blank" alt="Instagram profile"></a>
+<a href=" https://wa.me/message/5FVSRGYVBO3DP1" target="_blank"><img data-aos="fade-down" data-aos-duration="2500" src="icons/whatsapp.png" alt="click to open chat with us"></a>
+<a href="https://g.page/r/CYi1Tsa1ZpiKEAE" target="_blank"><img data-aos="fade-down" data-aos-duration="3000" src="icons/my-business.png" alt="see business on google"></a>
 </div>
-<div id="content7" class="rounded-pill bg-primary mb-4">
+<div id="content7" class="rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Terms/policies:</h3>
     <a href="">Fee,Refund and Cancellation Policy</a><br>
     <a href="">Terms & conditions</a><br>
     <a href="">Terms of Service</a><br>
     <a href="">Privacy</a>
 </div>
-<div id="content8" class="rounded-pill bg-primary mb-4">
+<div id="content8" class="rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Contact:</h3> 
     <a href="tel:9758991422">+91 975 8991 422</a><br>
       <a href="tel:6397402201">  +91 639 7402 201</a>
@@ -319,7 +330,7 @@ rent activa for a month. ">
         write to us
     </a>
 </div>
-<div id="content9" class="rounded-pill bg-primary mb-4">
+<div id="content9" class="rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Available:</h3> 
     <a href="https://g.page/r/CYi1Tsa1ZpiKEBA">
 ballupur chaowk, Kandoli, Bidhodli, Dehradun,Uttarakhand, India, 248007
@@ -361,5 +372,11 @@ function myfunction(){
     }
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200
+    });
+  </script>
         </body>
 </html>

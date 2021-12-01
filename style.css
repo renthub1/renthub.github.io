@@ -8,40 +8,17 @@ html{
     font-family: 'Balsamiq Sans', cursive;
     scroll-behavior: smooth;
 }
-#header{
-    width: 100%;
-    height: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* background-image: url('1.jpg');
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0); */
-}
 #loader{
     background: white url('loading.gif') no-repeat center center;
     z-index: 9999999;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
 }
 #head{
-    width: 100%;
     height: 9vh;
-    max-height: 90px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
     background-color: #e67e22;
 }
 #logo{
     width: 20%;
     height: 9vh;
-    float: left;
-    text-align: center;
-    position: relative;
     filter: drop-shadow(0px 0px 2px white);
     z-index: 1111111111111;
 }
@@ -56,32 +33,26 @@ html{
     height: auto;
 }
 #menu{
-    width: 80%;
     height: 9vh;
-    float: right;
-    text-align: right;
     position: fixed;
+    transition: 0.3s;
     z-index: 1111;
     right: 0;
-    opacity: .87;
-}
-#menu ul{
-    list-style-type: none;
+    /*line-height: 4;*/
 }
 #menu li{
     display: inline;
-    padding: 0.3rem;
     line-height: 4;
     background-color: #e67e22;
     /*box-shadow: 0px 0px 2px #ecf0f1;*/
 }
 #menu li:hover{
     background-color: #ffffff96;
-    transition: 0.5s;
+    transition: 1.2s;
 }
 #menu a{
-    text-decoration: none;
-    color: white;
+ /*   text-decoration: none;
+    color: white;*/
 }
 .material-icons{
 	position: absolute;
@@ -91,64 +62,6 @@ html{
     visibility: hidden;
     font-size: 2rem!important;
     color: white;
-}
-.contain{
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background: #333;
-    overflow: hidden;
-}
-
-.contain .clip{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-.contain .clip.clip1{
-    background: url(1.jpg);
-    background-size: cover;
-    clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
-} 
-
-.contain .clip.clip2{
-    background: url(4.jpg);
-    background-size: cover;
-    clip-path: polygon(50% 0, 100% 0, 60% 100%, 30% 100%);
-}
-
-.contain .clip.clip3{
-    background: url(c1.jpg);
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 60% 100%);
-}
-
-.contain:hover .clip{
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 100% 100%, 100% 57%, 100% 0);
-}
-
-.contain .clip:hover{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.contain .clip .content{
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 70%;
-    padding: 20px;
-    background: #fff;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.contain .clip:hover .content{
-    bottom: 0;
-    opacity: 1;
 }
 #container{
     width: 100%;
@@ -205,7 +118,7 @@ html{
     background-color: #d35400;
     padding-top: 4rem;
     padding-bottom: 2rem;
-    clip-path: polygon(100% 0%, 100% 93%, 50% 100%, 0 93%, 0 0);
+    clip-path: polygon(100% 0%, 100% 94%, 50% 100%, 0 94%, 0 0);
 }
 #content1{
     width: 100%;
@@ -217,9 +130,6 @@ html{
     text-transform: uppercase;
 }
 #content1 p{
-    column-count: 2;
-    column-rule: dashed;
-    column-gap: 10px;
     line-height: 2;
     letter-spacing: .1rem;
 }
@@ -257,7 +167,7 @@ html{
     box-shadow: 0 0 5px #ff6a06;
 }
 #third{
-    background-color: #d35400;
+    /*background-color: #d35400;*/
     /*background-image: url('pics/bg/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -367,7 +277,6 @@ html{
     width: 75%;
     margin: auto;
     font-size: 1.2rem;
-    color:black;
 }    
 #box3{
     width: 100%;
