@@ -73,7 +73,29 @@ rent activa for a month. ">
             <a class="text-white text-decoration-none" href="#seventh"><li class="rounded-pill p-2 fs-5">contact us</li></a>
         </ul>
     </div>
-    <a onclick="icon()"><i class="material-icons">menu</i></a>
+    <!-- <a onclick="icon()"><i class="material-icons">menu</i></a> -->
+    <button class="yell navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="offcanvas offcanvas-end w-50 bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="menu_list lh-lg float-start text-leftr">
+        <ul>
+            <a class="text-light text-decoration-none" href="#header"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">slide up</li></a>
+            <a class="text-light text-decoration-none" href="#second"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">Renthub</li></a>
+            <a class="text-light text-decoration-none" href="#third"><li class="lh-lg list-unstyled rounded-pill my-4 p-2 fs-5">services/facilily</li></a>
+            <a class="text-light text-decoration-none" href="#fourth"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">works</li></a>
+            <a class="text-light text-decoration-none" href="#fiveth"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">reviews</li></a>
+            <a class="text-light text-decoration-none" href="#sixth"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">blog</li></a>
+            <a class="text-light text-decoration-none" href="#seventh"><li class="list-unstyled rounded-pill my-4 p-2 fs-5">contact us</li></a>
+        </ul>
+    </div>
+  </div>
+</div>
 </div>
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -81,7 +103,6 @@ rent activa for a month. ">
       <img src="11.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary">
         <h5 class="display-2 text-capitalize fw-normal text-light" data-aos="slide-down">welcome to renthub</h5>
-        <!-- <p class="fs-5">Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent. Best price, no mess. The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price.</p> -->
       </div>
     </div>
     <div class="carousel-item">
@@ -347,14 +368,14 @@ ballupur chaowk, Kandoli, Bidhodli, Dehradun,Uttarakhand, India, 248007
 </div>
 <script>
 
-function icon(){
-    var e=document.getElementById('menu');
-    if(e.className === 'menu_list'){
-        e.className += " responsive_menu";
-    }else{
-        e.className = 'menu_list';
-    }
-}
+// function icon(){
+//     var e=document.getElementById('menu');
+//     if(e.className === 'menu_list'){
+//         e.className += " responsive_menu";
+//     }else{
+//         e.className = 'menu_list';
+//     }
+// }
 
 var preloader=document.getElementById("loader");
 function myfunction(){

@@ -36,8 +36,8 @@ html{
     height: 9vh;
     position: fixed;
     transition: 0.3s;
-    z-index: 1111;
-    right: 0;
+    z-index: 1;
+    right: 20px;
 }
 #menu li{
     display: inline;
@@ -49,14 +49,25 @@ html{
     background-color: #ffffff96;
     transition: 1.2s;
 }
-.material-icons{
+.icon{
 	position: absolute;
 	top: 20px;
 	right: 20px;
     opacity: 0;
     visibility: hidden;
-    font-size: 2rem!important;
+    /*font-size: 2rem!important;*/
     color: white;
+}
+.yell{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    z-index:11111111111;
+}
+.offcanvas{
+    z-index:11111111111;   
 }
 #container{
     background-color: #d35400;
@@ -220,23 +231,32 @@ html{
         opacity: 0;
         visibility: hidden;
     }
-    .material-icons{
+    .icon{
         opacity: 1;
         visibility: visible;
         position: fixed;
-        z-index: 999999999999;
+        z-index: 9999999999;
+    }
+    .yell{
+        opacity: 1;
+        visibility: visible;
+    }
+    .offcanvas li:hover{
+        background-color: white;
+        transition: 1.2s;
+        color: black;
     }
     #menu.responsive_menu ul{
         opacity: 1;
         visibility: visible;
     }
     #menu.responsive_menu{
-        background: #e67e22;
+        /*background: #e67e22;*/
         width: 50%!important;
-        height: 100vh!important;
-        position: fixed;
-        z-index: 999999;
-        top: 5rem;
+        /*height: 100vh!important;*/
+        /*position: fixed;*/
+        /*z-index: 999999;*/
+        /*top: 5rem;*/
     }
     #menu.responsive_menu ul li{
         float: none;
