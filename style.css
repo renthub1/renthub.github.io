@@ -36,7 +36,7 @@ html{
     height: 9vh;
     position: fixed;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 11;
     right: 20px;
 }
 #menu li{
@@ -48,6 +48,7 @@ html{
 #menu li:hover{
     background-color: #ffffff96;
     transition: 1.2s;
+    color: black;
 }
 .icon{
 	position: absolute;
@@ -98,7 +99,7 @@ html{
 }
 #second{
     background-color: #d35400;
-    clip-path: polygon(100% 0%, 100% 94%, 50% 100%, 0 94%, 0 0);
+    clip-path: polygon(100% 0%, 100% 96%, 50% 100%, 0 96%, 0 0);
 }
 .box1 #bo1,#bo2{
     box-shadow: 2px 4px 5px black;
@@ -113,6 +114,7 @@ html{
     box-shadow: 0 0 5px #e06d07;
     background-color: #e06d07;
     transition: 0.5s;
+    color: white;
 }
 .box2{
     box-shadow: 9px 22px 42px black;
@@ -243,7 +245,7 @@ html{
     }
     .offcanvas li:hover{
         background-color: white;
-        transition: 1.2s;
+        transition: 1.5s;
         color: black;
     }
     #menu.responsive_menu ul{
