@@ -26,8 +26,12 @@ rent activa for a month. ">
      crossorigin="anonymous"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href= "icons/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152-precomposed.png"/>
         <title>Renthub&mdash;rent bike in dehradun, active, bike rent starting &#8377;65.</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HYKYBJEWN"></script>
@@ -51,107 +55,367 @@ rent activa for a month. ">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T82RHXK"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  <div id="header">              
-    <div id="loader"></div>
-                <div id="head">
-                    <div id="logo">
+    <div id="head" class="w-100 text-capitalize position-fixed bg-light fs-5">
+                    <div id="logo" class="float-start text-center position-relative">
                         <img src="sx.png" alt="renthub 
                         bike rent logo">
                     </div>
-    <div id="menu" class="menu_list">
+    <div id="menu" class="menu_list rounded-pill float-end w-80">
         <ul>
-            <li><a href="#header">slide up</a></li>
-            <li><a href="#second">book</a></li>
-            <li><a href="#third">services/facilily</a></li>
-            <li><a href="#fourth">works</a></li>
-            <li><a href="#fiveth">reviews</a></li>
-            <li><a href="#sixth">blog</a></li>
-            <li><a href="#seventh">contact us</a></li>
+            <a class="text-decoration-none" href="#header"><li class="text-dark p-2 fs-5">slide up</li></a>
+            <a class="text-decoration-none" href="#container"><li class="text-dark p-2 ">Renthub</li></a>
+            <a class="text-decoration-none" href="#second"><li class="text-dark  p-2 fs-5">r rentals</li></a>
+            <a class="text-decoration-none" href="#vehicles"><li class="text-dark p-2 fs-5">r vehicles</li></a>
+            <a class="text-decoration-none" href="#location"><li class="text-dark p-2 fs-5">r outlets</li></a>
+            <a class="text-decoration-none" href="#why"><li class="text-dark p-2 fs-5">y renthub</li></a>
+            <a class="text-decoration-none" href="#fiveth"><li class="text-dark p-2 fs-5">reviews</li></a>
+            <a class="text-decoration-none" href="#sixth"><li class="text-dark p-2 fs-5">blogs</li></a>
+            <a class="text-decoration-none" href="#seventh"><li class="text-dark p-2 fs-5">contact us</li></a>
+            <div class="animation start-home"></div>
         </ul>
     </div>
-    <a href="#" onclick="icon()"><i class="material-icons">menu</i></a>
 </div>
-<div class="contain">
-    <div class="clip clip1">
-        <div class="content">
-            <h2>Post Content One</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis, autem nesciunt
-                similique facere tempore pariatur numquam doloribus aspernatur officiis sequi, a inventore dolor!
-                Delectus minus voluptates ab modi corporis!</p>
-        </div>
+  <div id="header" class="w-100 h-auto">              
+    <div id="loader" class="w-100 h-100 position-absolute "></div>
+                
+    <!-- <a onclick="icon()"><i class="material-icons">menu</i></a> -->
+    <button class="yell navbar-toggler navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="offcanvas offcanvas-end w-50 bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="menu_list lh-lg float-start text-center">
+        <ul>
+            <a class="text-light text-decoration-none" href="#header"><li class="list-unstyled rounded-pill my-4 fs-5">slide up</li></a>
+            <a class="text-light text-decoration-none" href="#container"><li class="list-unstyled rounded-pill my-4 fs-5">Renthub</li></a>
+            <a class="text-white text-decoration-none" href="#second"><li class="list-unstyled rounded-pill fs-5">r outlets</li></a>
+            <a class="text-light text-decoration-none" href="#third"><li class="lh-lg list-unstyled rounded-pill my-4 fs-5">services/facilily</li></a>
+            <a class="text-light text-decoration-none" href="#fourth"><li class="list-unstyled rounded-pill my-4 fs-5">works</li></a>
+            <a class="text-light text-decoration-none" href="#fiveth"><li class="list-unstyled rounded-pill my-4 fs-5">reviews</li></a>
+            <a class="text-light text-decoration-none" href="#sixth"><li class="list-unstyled rounded-pill my-4 fs-5">blogs</li></a>
+            <a class="text-light text-decoration-none" href="#seventh"><li class="list-unstyled rounded-pill my-4 fs-5">contact us</li></a>
+        </ul>
     </div>
-    <div class="clip clip2">
-        <div class="content">
-            <h2>Post Content Two</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis, autem nesciunt
-                similique facere tempore pariatur numquam doloribus aspernatur officiis sequi, a inventore dolor!
-                Delectus minus voluptates ab modi corporis!</p>
-        </div>
-    </div>
-    <div class="clip clip3">
-        <div class="content">
-            <h2>Post Content Three</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis, autem nesciunt
-                similique facere tempore pariatur numquam doloribus aspernatur officiis sequi, a inventore dolor!
-                Delectus minus voluptates ab modi corporis!</p>
-        </div>
-    </div>
+  </div>
 </div>
 </div>
+<div id="car"></div>
+ <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item jello active">
+      <img src="11.jpg" class="d-block w-100 overlay" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary shadow-lg">
+        <h5 class="display-2 text-capitalize fw-normal text-light" data-aos="slide-down">welcome to renthub</h5>
+      </div>
+    </div>
+    <div class="carousel-item jello">
+      <img src="5.webp" class="d-block w-100 overlay" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-primary shadow-lg">
+        <h5 class="fs-5 text-capitalize">Our rental offers</h5>
+        <p class="fs-5">Rent on <strong>day basis</strong> or rent on <strong>monthly basis</strong> both are available. To book a vehicle from us or if you want to know more feel free contact us.
+            Renthub provides you the best ride and comfortale prices.</p>
+      </div>
+    </div>
+    <div class="carousel-item jello">
+      <img src="c1.jpg" class="d-block w-100 overlay" alt="...">
+      <div class="carousel-caption d-none d-md-block rounded-pill bg-primary">
+        <h5 class="fs-5 text-capitalize">what do you need to book a vehicle from us?</h5>
+        <p class="fs-5">An original driving license photo or a pic and aadhar photo or a pic.</p>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="box9">
 <div id="container">
-    <div id="box">
-        <hr>
-        <h1>Renthub<br>
-            (best bike rentals)
-        </h1>
-            <p>
-                Renthub is a self-driving vehicle rental service. We currently offer two wheeler vehicle for rent.Best price, no mess. The best place to rent any vehicle without any hassle. A safe place to rent vehicles at discounted price. Currently our services are available in Uttarakhand Dehradun state. Not just that renthub is the best dehradun bike on rent and scooty rent in dehradun, we provide different categories of bike rent dehradun. we will further provide delivery of bike rental dehradun. Reservations can be made only for immediate pickup within 15 minutes and only through our app.Our users experience a convenient, easy and quick ride and keep coming back. 
+    <h1 class="text-capitalize text-light fw-normal text-center py-5 display-4">renthub<br><small class="fs-1">(best bike rentals)</small></h1>
+    <div class="d-flex justify-content-evenly align-items-center flex-wrap py-5">
+    <div class=" bg-transparent shadow-lg w-50 mx-auto" id="box" data-aos="flip-up" data-aos-offset="100">
+        <hr class="bg-light m-auto">
+        <h1 class="ps-4 text-light">Renthub</h1>
+            <p class="px-4 fw-normal fs-4 text-light">
+                Renthub is a self-driving vehicle rental service.We currently offer two wheeler vehicle for rent.Best price,no mess.The best place to rent any vehicle without any hassle.A safe place to rent vehicles at discounted price.Currently our services are available in Dehradun Uttarakhand state.<!-- Not just that renthub is the best dehradun bike on rent and scooty rent in dehradun, -->we provide different categories of bike rent dehradun.we will further provide delivery of bike rental dehradun.  
     </p>
-    <div id="img1"><img src=pics/play.webp alt="google play icon"></div>
+    <div id="img1" class="p-3"><img src=pics/play.webp data-aos="zoom-in" alt="google play icon"></div>
     </div>
-    <img src="pics/renthub whatsapp4.webp" id="whatsapp" alt="whatsapp icon">
+    <!-- <img class="m-5 bg-light" src="pics/renthub whatsapp4.webp" id="whatsapp" data-aos="flip-down" alt="whatsapp icon"> -->
+    <div class="w-50 ">
+    <div id="carouselExampleSlidesOnly1" class="carousel slide my-5 mx-auto w-100" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="images/slide1.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div class="carousel-caption  w-25 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>staring @ ₹65</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide2.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div class="carousel-caption  w-25 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>best quality scooters</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider6.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div class="carousel-caption w-25 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>select your plan</h5>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="second">
-    <div id="content1">
-        <h4>our offer</h4>
-        <p>
-            Our offers is available on our app.Book from renthub application for exlucive offers and prices.Our offers are daily updated on the app so that customer can easily select one and then apply them in the checkout page.Weekly discouted offers will be keep coming on the app. For our new customer the first two rides are almost for half of a price. We will be providing a lot of upcoming tours like rishikesh to badrinath bike rent.
-        </p>
+</div>
+</div>
+</div>
+</div>
+<div id="second" class="text-dark py-5 px-5 w-100">
+    <div id="content1" class="py-5">
+        <h4 class="display-4 text-capitalize lh-base text-uppercase fw-normal text-center"><u>how to rent?</u></h4>
+        <div class="alert alert-danger container my-5 text-center  w-50 text-capitalize" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg>
+we are not giving vehicles to the customers who's carrying learner's license as it is not applicable</div>
+<div class="">
+        <div class="fs-5 my-5 lh-lg fw-bolder text-center">
+
+          Due to the coronavirus situation we have stopped taking bookings from the app for now we are taking bookings only through calls,So to rent a vehicle just contact us or call on the renthub provided contact number below at the end of the page.
+        </div>
+          <h1 class="my-4 text-capitalize display-5 text-center">how it works?</h1>
+          <!-- <div class="d-flex flex-column  position-relative">
+          <div class="rounded-pill btn  bg-primary  shadow-lg " style="width:2.5rem">1</div><span class="position-absolute start-50">select plan</span>
+          <div class="rounded-pill my-5 btn bg-primary shadow-lg " style="width:2.5rem">2</div><span class="position-absolute top-50 start-50">call us</span>
+          <div class="rounded-pill btn bg-primary shadow-lg " style="width:2.5rem">3</div><span class="position-absolute top-80 start-50">done</span>
+          </div> -->
+          <div id="steps" class="align-self-center d-flex justify-content-evenly align-items-center flex-wrap">
+            <!-- <ul class="list-group w-25 mx-auto">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A list item
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A second list item
+    <span class="badge bg-primary rounded-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A third list item
+    <span class="badge bg-primary rounded-pill">1</span>
+  </li>
+</ul> -->
+<div class="m-auto">
+<div class="d-flex justify-content-around w-100 my-3">
+  <li type="button" class="list-group-item p-1 bg-primary fs-5 shadow-lg btn  btn-sm btn-primary rounded-pill" style="width: 2.5rem; height:2.5rem;">1</li><span class="ms-2 me-auto fs-5">Select plan</span></div>
+  <div class="d-flex justify-content-around w-100 my-3">
+  <li type="button" class="list-group-item p-1 bg-primary fs-5 shadow-lg   btn btn-sm btn-primary rounded-pill" style="width: 2.5rem; height:2.5rem;">2</li><span class="ms-2 me-auto  fs-5">Call Us</span></div>
+  <div class="d-flex justify-content-around w-100 my-3">
+  <li type="button" class="list-group-item p-1 bg-primary fs-5 shadow-lg   btn btn-sm btn-primary rounded-pill" style="width: 2.5rem; height:2.5rem;">3</li><span class="ms-2 me-auto  fs-5">Pick up your vehicle</span></div>
+  <div class="d-flex justify-content-around w-100 my-3">
+  <li type="button" class="list-group-item p-1 bg-primary fs-5 shadow-lg btn btn-sm btn-primary rounded-pill" style="width: 2.5rem; height:2.5rem;">4</li><span class="ms-2 me-auto  fs-5">Done</span></div>
+  <div class="d-flex justify-content-around w-100 my-3">
+  <li type="button" class="list-group-item p-1 bg-primary fs-5  shadow-lg btn btn-sm btn-primary rounded-pill" style="width: 2.5rem; height:2.5rem;">5</li><span class="ms-2 me-auto fs-5">Enjoy Ride</span></div>
+  </div>
+  <div class="w-50 ">
+    <div id="carouselExampleSlidesOnly" class="carousel slide my-5 mx-auto w-100" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item w-75 active">
+      <img src="images/slide7.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div id="step1" class="carousel-caption d-none d-md-block ms-5  w-50 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>select your plan</h5>
+        <p>select package that fits your accomodation.</p>
+      </div>
     </div>
-    <div class="box1">
+    <div class="carousel-item w-75">
+      <img src="images/slide8.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div id="step2" class="carousel-caption d-none d-md-block w-50 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>call us</h5>
+        <p>contact us <a class="text-decoration-none fs-5" href="tel:6397402201">  +91 639 7402 201</a></p>
+      </div>
+    </div>
+    <div class="carousel-item w-75">
+      <img src="images/slider6.png" class="d-block w-100" alt="..." style="max-width: 436px;">
+      <div id="step3" class="carousel-caption d-none d-md-block mt-5 rounded-pill text-primary text-capitalize top-75 bg-warning">
+        <h5>pick up your vehicle</h5>
+        <p>pick up vehicles on renthub outlets whichever is nearest to you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <div class="accordion text-dark container my-5 w-25" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed text-capitalize fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        documents need to rent a bike from renthub?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body textmonthlyase">Keep original Driving license and aadhar card for verification.</div>
+    </div>
+  </div>
+</div>
+<h6 class="text-capitalize display-4 text-center fw-normal py-5"><u>daily/montly rental available.</u></h6>
+<p class="fs-5 text-center py-5 fw-bolder">We do our best for our customers and We have tried to make these packages at a low cost, keeping in mind their needs, these plans have been made which are neither too cheap nor too expensive which would be right for them.We have created a variety of plans and packages that are reasonably good and suitable.<br>Renthub provides vehicles for day and monthly basis. </p>
+
+<ul class="nav nav-tabs nav-justified my-5" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-capitalize fs-5 fw-bolder" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">our prices</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-capitalize fs-5 fw-bolder" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">day prices</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+<div class="text-capitalize fs-5 text-center rounded-3">monthly prices
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="pics/5.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+
+    <div class="col-md-8">
+      <div class="accordion text-dark container my-5 w-75" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed text-capitalize fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        honda activa 5g
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body textmonthlyase">
+        <div class="card-body">
+        <!-- <h5 class="card-title text-dark">Activa 5g</h5> -->
+        <ul class="list-group list-group-flush">
+    <li class="list-group-item">60 days<br><span class="">₹13000(1400km)</span></li>
+    <li class="list-group-item">30 days<br><span class="">₹6500(700km)</span></li>
+    <li class="list-group-item">25 days<br><span class="">₹6000(650km)</span></li>
+    <li class="list-group-item">15 days<br><span class="">₹3500(350km)</span></li>
+    <li class="list-group-item">7  days<br><span class="">₹1700(170km)</span></li>
+    <li class="list-group-item">5  days<br><span class="">₹1500(150km)</span></li>
+  </ul>
+  
+      </div>
+      <div class="card-body">
+    <a href="#" class="card-link btn btn-success">call Now for booking</a>
+    <!-- <a href="#" class="card-link btn btn-secondary">Advance booking</a> -->
+  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      
+  <div class="alert alert-danger container" role="alert"><small>! For per /km usage ₹5 will be charge as penalty</small></div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<div class="text-capitalize fs-5 text-center">day rent
+<div class="card mb-3 ms-auto" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="pics/4.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Activa 5g</h5>
+        <ul class="list-group list-group-flush">
+    <li class="list-group-item">60 days   ₹12500(1400km)</li>
+    <li class="list-group-item">30 days   ₹6500(700km)</li>
+    <li class="list-group-item">30 days   ₹5000(500km)</li>
+    <li class="list-group-item">15 days   ₹2500(250km)</li>
+    <li class="list-group-item">7  days   ₹1700(170km)</li>
+    <li class="list-group-item">5  days   ₹1500(150km)</li>
+    <li class="list-group-item">25 days   ₹2500(250km)</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link btn btn-danger">Rent Now</a>
+    <a href="#" class="card-link btn btn-secondary">Advance booking</a>
+  </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+    
+    </div>
+    <div id="vehicles" class="shadow-lg">
+  <div class="h6 text-capitalize text-center text-light fw-normal display-4 py-5">
+    <u>R<small class="text-muted">enthub</small> vehicles</u>
+  </div>
+  
+  <p class="fs-5 text-center text-light fs-4">We are dealing with two wheeler vehicles right now. we have four honda activa 5g  and a honda cliq</p>
+  <div class="box1 w-100">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner d-flex">
               <div class="carousel-item active">
-                <div id="bo1">
-                    <img src="pics/7.webp" alt="activa 5g">
-                    <div class="scroller">
-                    <h2>Honda activa 5g<br>
+                <div id="bo1" class="m-auto lh-lg my-5">
+                    <img src="pics/7.webp" alt="activa 5g" width="100%">
+                    <div class="scroller p-2">
+                    <h2 class="text-center fw-normal">Honda activa 5g<br>
                     ₹550/day</h2>
-                    Helmets 2
-                    <hr>
-                    Seats   2
-                    <hr>
-                    Transmission  2y
-                    <hr>
-                    Minimum age 2y<br>
-                    <button type="button" class="but">Rent Now</button>
+                    <div class="fs-5">
+                      <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Helmets
+                    <span class="">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    seats
+                    <span class="">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    transmission
+                    <span class="">3y</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    minimum age
+                    <span class="">3y</span>
+                    </li>
+                  </ul>
+                    </div>
+                    <button type="button" class="but fs-5 fw-bolder px-2 cursor">Rent Now</button>
                 </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <div id="bo2">
-                    <img src="pics/8.webp" alt="honda cliq">
-                    <div class="scroller">
-                    <h2>Honda cliq<br>
+                <div id="bo2" class="m-auto lh-lg my-5">
+                    <img src="pics/8.webp" alt="honda cliq" width="100%">
+                    <div class="scroller p-2">
+                    <h2 class=" fw-normal text-center">Honda cliq<br>
                     ₹500/day</h2>
-                    Helmets 2
-                    <hr>
-                    Seats   2
-                    <hr>
-                    Transmission    2y
-                    <hr>
-                    Minimum age 2y<br>
-                    <button type="button" class="but">Rent Now</button>
+                    <div class="fs-5">
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Helmets
+                    <span class="">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    seats
+                    <span class="">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    transmission
+                    <span class="">3y</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    minimum age
+                    <span class="">3y</span>
+                    </li>
+                  </ul>
+                </div>
+                    <button type="button" class="but fs-5 fw-bolder px-2 cursor">Rent Now</button>
                 </div>
                 </div>
               </div>
@@ -167,124 +431,131 @@ rent activa for a month. ">
           </div>
             </div>
 </div>
-<div id="third">
-    <h1>Our services<br>(Best service of bike taxi in dehradun)
+
+<h6 id="location" class="display-5 text-capitalize text-center my-5">R<small class="text-muted">enthub</small> outlets/locations?</h6>
+<div class="text-center shadow-lg bg-light">
+  <p class="text-capitalize text-center fs-5">available locations/outlets of renthub is located in nearby dehradun areas. where customer can easily pick one of the closest location from their loca drop their bike/scooty where</p>
+            <iframe class="container my-5 w-75" data-aos="fade-down" src="https://www.google.com/maps/d/embed?mid=1dypbAIsSMPTSxgiTgCC4N4r4CUROWuTb&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+<div id="why" class="w-100 py-5 shadow-lg">
+    <h1 class="text-dark text-center display-4 text-capitalize">Why choose renthub rentals ?<br><small class="fs-1">(Best service of bike taxi in dehradun)</small>
     </h1>
-    <div id="content3">
-    <div class="box2">
+    <div class="container my-5">
+<div class="progress" style="width: 100%; height: 50px;">
+    <div class="progress-bar bg-success progress-bar-animated progress-bar-striped fs-4 " style="width:35%;">
+        1000+ happy successfull bookings and still counting.
+    </div>
+    </div>
+</div>
+    <div id="content3" class="text-dark d-flex flex-wrap justify-content-evenly pt-5">
+    <div class="box2 m-3 text-center ">
 <img src="icons/scooter1.png" alt="scooter">
-<h2>vehicles<br>(Best bike rent near me)
+<h2 class="text-capitalize">vehicles<br><small class="fs-5">(Best bike rent near me)</small>
     </h2>
-<p>Renthub provides various number of vehicles near your destination / bike rent near me.Suitables rides for you.
+<p class="fs-5">Renthub provides various number of vehicles near your destination / bike rent near me.Suitables rides for you.
 
 </p>
 </div>
-<div class="box2">
+<div class="box2 m-3 text-center">
 <img src="icons/key.png" alt="key icon">
-<h2>Features<br>
-    (Best bike rental near me)
+<h2 class="text-capitalize">Features<br>
+    <small class="fs-5">(Best bike rental near me)</small>
 </h2>
-<p>
+<p class="fs-5">
     If you book your ride from us, there is no hassle just search for rent activa or rent activa near me and then select renthub and install it and then book your ride from our app.
 </p>
 </div>
-<div class="box2">
+<div class="box2 m-3 text-center">
 <img src="icons/helmet.png" alt="helmet icon">
-<h2>Safe & secure<br>
-    (best & safe bike rental service in dehradun)
+<h2 class="text-capitalize">Safe & secure<br>
+    <small class="fs-5">(best & safe bike rental service in dehradun)</small>
 </h2>
-<p>
+<p class="fs-5">
     Taking a vehicle from us is make you feel safer.
 </p>
 </div>
-<div class="box2">
+<div class="box2 m-3 text-center">
 <img src="icons/scooter.png" alt="scooter2">
-<h2>Best & better<br>
-    (rent activa)
+<h2 class="text-capitalize">Best & better<br>
+    <small class="fs-5">(rent activa)</small>
 </h2>
-<p>
+<p class="fs-5">
     We provide bestest and better vehicles, which are in good conditions. Just locate with best bike rent in dehradun.</p>
 </div>
-<div class="box2">
+<div class="box2 m-3 text-center">
 <img src="icons/booking.png" alt="booking icon">
-<h2>Booking<br>
-    (rent activa near me)
+<h2 class="text-capitalize">Booking<br>
+    <small class="fs-5">(rent activa near me)</small>
 </h2>
-<p>
+<p class="fs-5">
     Through our app you can book vehicle and easy to extend.It is easy to rent bike in dehradun once you install our app. Easy user friendly, with lots of additional features.</p>
 </div>
 </div>
 </div>
-<div id="fourth">
-    <div id="content4">
-    <h1>How it works<br>
-        (rent activa for a month)</h1>
-        <p>Install our application from any market and upload your driving license, book your ride and enjoy. If you want to book a ride in renthub or search for renthub just search for bike on rent in dehradun near isbt, dehradun bike rental dehradun uttarakhand dehradun scooty rent, hire bike in dehradun, bike hire in dehradun, bike rent in dehradun near me, bike rent on dehradun and that's it and take care of yourself please.
-        </p>
-    </div>
-    <hr>
-    <div id="slider">
-        <img src="slide2.webp" alt="slider">
-    </div>
+<!--<div id="fourth" class="w-100 h-auto py-5">
+    
+    <div id="slider" class="position-relative my-5">
+        <img src="slide2.webp" alt="slider" class="position-absolute img-fluid">
+    </div> -->
     <!-- <span class="range">
         <h5>Download application Register details Select area Book ride Done</h5>
-    </span> -->
-</div>
-<div id="fiveth">
+    </span>
+</div>-->
+<div id="fiveth" class="py-5 text-light shadow-lg">
     <div id="content5">
-    <h1>Customer Testimony<br>
-        (best bike rent)</h1>
-        <p>We would like to thanks our customers for choosing our services and sharing there experiences! Our customers who are well satisfied with our services! Our customers have awarded us with such beautiful awords like the best bike rent in dehradun by renthub, very good bike on rent from dehradun to mussoorie, service thank you, best bike on rent in dehradun near railway station, the best bike hire in dehradun i was afraid at taking the vehicles from here but it was very good thanks, bestest dehradun bike rentals near me service, with lot of drop points its easy and comfortable
+    <h1 class="text-center display-4 text-capitalize">Customer Testimony<br>
+        <small class="fs-1">(best bike rent)</small></h1>
+        <p class="px-4 my-5 fs-5 text-center">We would like to thanks our customers for choosing our services and sharing there experiences! Our customers who are well satisfied with our services! Our customers have awarded us with such beautiful awords like the best bike rent in dehradun by renthub, very good bike on rent from dehradun to mussoorie, service thank you, best bike on rent in dehradun near railway station, the best bike hire in dehradun i was afraid at taking the vehicles from here but it was very good thanks, bestest dehradun bike rentals near me service, with lot of drop points its easy and comfortable
             updated reviews by customers
         </p>
         </div>
-        <div id="box3">
-            <div class="box4">
-            <p>"I am a student and i needed a vehicles for my college work so i heard about this renthub services that they provide and i download there appication and booked a ride and it was very easy and also the prices were very cheap."
+        <div id="box3" class="d-flex text-center align-items-center flex-wrap justify-content-evenly">
+            <div class="box4 p-5 m-4" data-aos="zoom-in">
+            <p class="fs-5">"I am a student and i needed a vehicles for my college work so i heard about this renthub services that they provide and i download there appication and booked a ride and it was very easy and also the prices were very cheap."
             </p>
-            <img src="images/person_1.jpg" alt="customer 1">Mayank nautiyal
+            <img src="images/person_1.jpg" alt="customer 1"><h5>Mayank nautiyal</h5>
         </div>
-        <div class="box4">
-            <p>"Best place to bike rent at cheap price and they provide different kinds of rent bike and you can select yours."
+        <div class="box4 p-5 m-4" data-aos="zoom-in">
+            <p class="fs-5">"Best place to bike rent at cheap price and they provide different kinds of rent bike and you can select yours."
             </p>
             <img src="images/person_4.jpg" alt="customer 2"><h5>Milind gurung</h5>
         </div>
-        <div class="box4">
-            <p>"Great service, very useful and affordable facility in this area!"</p>
+        <div class="box4 p-5 m-4" data-aos="zoom-in">
+            <p class="fs-5">"Great service, very useful and affordable facility in this area!"</p>
             <img src="images/person_5.jpg" alt="customer 3"><h5>Gunjan juyal</h5>
         </div>
         </div>
 </div>
-<div id="sixth">
-    <h1>Our Blog</h1>
-        <p>
+<div id="sixth" class="py-5">
+    <h1 class="text-dark text-center display-4">R Blogs</h1>
+        <p class="text-dark text-center fs-5 px-3 my-5">
             Places to visit in uttarakhand. when you want to take a trip in uttarakhand and not able to decide where to go. Don't worry we have some updated places for you every day. enjoy!
         </p>
-        <div id="box5">
-            <div class="box6">
-            <img src="images/img_1.webp" alt="car 1">
+        <div id="box5" class="d-flex flex-wrap justify-content-evenly text-center">
+            <div class="box6 my-5" data-aos="slide-up">
+            <img src="images/img_1.webp" alt="car 1" width="100%">
             <h3>The best bike rent in the entire planet</h3>
-            <p>bike rent, harley davidson rental, bike rental near me, rent a car, Budget Rent a Car, bike rental in Dehradun.
+            <p class="py-3 px-3 fs-5">bike rent, harley davidson rental, bike rental near me, rent a car, Budget Rent a Car, bike rental in Dehradun.
             </p>    
             </div>
-            <div class="box6">
-                <img src="images/img_2.webp" alt="car 2">
+            <div class="box6 my-5" data-aos="slide-up">
+                <img src="images/img_2.webp" alt="car 2" width="100%">
                 <h3>The best car rent in the entire planet
                 </h3>
-                <p>bike hire in Rishikesh, cheapest bike rental in dehradun, bike rent in dehradun, bullet on rent in dehradun, bike on rent in dehradun.
+                <p class="py-1 px-2 fs-5">bike hire in Rishikesh, cheapest bike rental in dehradun, bike rent in dehradun, bullet on rent in dehradun, bike on rent in dehradun.
                 </p>    
                 </div>
-                <div class="box6">
-                    <img src="images/img_3.webp" alt="car3">
+                <div class="box6 my-5" data-aos="slide-up">
+                    <img src="images/img_3.webp" alt="car3" width="100%">
                     <h3>The best car rent in the entire planet
 
                     </h3>
-                    <p>bike rent in dehradun near me, bike rental mussoorie, cycle rent in dehradun, bike and scooty rent in dehradun, bike rent in rishikesh.  
+                    <p class="py-1 px-3 fs-5">bike rent in dehradun near me, bike rental mussoorie, cycle rent in dehradun, bike and scooty rent in dehradun, bike rent in rishikesh.  
                     </p>    
                     </div>
         </div>
-        <a href="" class="text-decoration-none text-info">more blogs. . .</a>
-        <div id="comments">
+        <a href="" class="text-decoration-none text-info"><div class="text-center my-5 fs-5">more blogs. . .</div></a>
+        <div id="comments" class="p-3 text-center">
             #rent bike , #bike rent , bike hire , rent bike near me , bike rent near me , rent bike dehradun, rent bike in dehradun, bike rentals dehradun, 
             bike for rent dehradun, dehradun bike on rent, bike rent dehradun, bike rent in dehradun, 
             bike rental dehradun, dehradun bike rental, bike rental in dehradun, bike on rent dehradun, 
@@ -296,53 +567,53 @@ rent activa for a month. ">
             rent activa for a month
         </div>
 </div>
-<div id="seventh">
-    <div id="last">
-<div id="content6">
-<h2> follow us on</h2>
-<a href="https://www.facebook.com/renthub1" target="_blank"><img src="icons/facebook.png" alt="Facebook profile"></a>
-<a href="https://www.instagram.com/renthub_india/" target="_blank"><img src="icons/instagram.png" target="_blank" alt="Instagram profile"></a>
-<a href=" https://wa.me/message/5FVSRGYVBO3DP1" target="_blank"><img src="icons/whatsapp.png" alt="click to open chat with us"></a>
-<a href="https://g.page/r/CYi1Tsa1ZpiKEAE" target="_blank"><img src="icons/my-business.png" alt="see business on google"></a>
+<div id="seventh" class="py-5">
+    <div id="last" class="text-center d-flex flex-wrap justify-content-evenly">
+<div id="content6" class="p-4 lh-base rounded-pill bg-secondary mb-4 p-2" data-aos="flip-right">
+<h2> connect with us</h2>
+<a href="https://www.facebook.com/renthub1" target="_blank"><img data-aos="fade-down" data-aos-duration="1000" src="icons/facebook.png" alt="Facebook profile"></a>
+<a href="https://www.instagram.com/renthub_india/" target="_blank"><img data-aos="fade-down" data-aos-duration="2000" src="icons/instagram.png" target="_blank" alt="Instagram profile"></a>
+<a href=" https://wa.me/message/5FVSRGYVBO3DP1" target="_blank"><img data-aos="fade-down" data-aos-duration="2500" src="icons/whatsapp.png" alt="click to open chat with us"></a>
+<a href="https://g.page/r/CYi1Tsa1ZpiKEAE" target="_blank"><img data-aos="fade-down" data-aos-duration="3000" src="icons/my-business.png" alt="see business on google"></a>
 </div>
-<div id="content7">
+<div id="content7" class="p-4 lh-base rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Terms/policies:</h3>
-    <a href="">Fee,Refund and Cancellation Policy</a><br>
-    <a href="">Terms & conditions</a><br>
-    <a href="">Terms of Service</a><br>
-    <a href="">Privacy</a>
+    <a class="text-decoration-none fs-5 text-light" href="">Fee,Refund and Cancellation Policy</a><br>
+    <a class="text-decoration-none fs-5 text-light" href="">Terms & conditions</a><br>
+    <a class="text-decoration-none fs-5 text-light" href="">Terms of Service</a><br>
+    <a class="text-decoration-none fs-5 text-light" href="">Privacy</a>
 </div>
-<div id="content8">
+<div id="content8" class="p-4 lh-base rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Contact:</h3> 
-    <a href="tel:9758991422">+91 975 8991 422</a><br>
-      <a href="tel:6397402201">  +91 639 7402 201</a>
+    <a class="text-decoration-none fs-5 text-light" href="tel:9758991422">+91 975 8991 422</a><br>
+      <a class="text-decoration-none fs-5 text-light" href="tel:6397402201">  +91 639 7402 201</a>
     <h3>Email:</h3>
-    <a href="Email.php"> 
+    <a class="text-decoration-none fs-5 text-light" href="Email.php"> 
         write to us
     </a>
 </div>
-<div id="content9">
+<div id="content9" class="p-4 lh-base rounded-pill bg-primary mb-4" data-aos="flip-right">
     <h3>Available:</h3> 
-    <a href="https://g.page/r/CYi1Tsa1ZpiKEBA">
+    <a class="text-decoration-none fs-5 text-light" href="https://g.page/r/CYi1Tsa1ZpiKEBA">
 ballupur chaowk, Kandoli, Bidhodli, Dehradun,Uttarakhand, India, 248007
     </a>
 </div>
 </div>
-<div id="copy">
-<br><hr><br><br>
+<div id="copy" class="text-center text-light">
+<br><hr class="w-75 h-5% bg-light mx-auto"><br><br>
 <h3>Copyright ©2021 All rights reserved</h3>
 </div>
 </div>
 <script>
 
-function icon(){
-    var e=document.getElementById('menu');
-    if(e.className === 'menu_list'){
-        e.className += " responsive_menu";
-    }else{
-        e.className = 'menu_list';
-    }
-}
+// function icon(){
+//     var e=document.getElementById('menu');
+//     if(e.className === 'menu_list'){
+//         e.className += " responsive_menu";
+//     }else{
+//         e.className = 'menu_list';
+//     }
+// }
 
 var preloader=document.getElementById("loader");
 function myfunction(){
@@ -363,5 +634,12 @@ function myfunction(){
     }
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+        easing:'linear',
+    });
+  </script>
         </body>
 </html>
