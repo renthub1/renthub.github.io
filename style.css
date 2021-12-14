@@ -178,7 +178,7 @@ html{
 #box{
     flex-basis: 27rem;
     box-shadow: 10px 10px 12px black;
-
+    
 }
 #box hr{
     height: .9rem;
@@ -206,15 +206,15 @@ html{
 }
 #steps #step1 {
     margin-bottom: 20rem!important;
-    margin-left: 12rem!important;
+    margin-left: 25rem!important;
 }
 #steps #step2 {
     margin-top: 20rem!important;
-    margin-left: 11rem!important;
+    margin-left: 23rem!important;
 }
 #steps #step3  {
-    margin-bottom: 10rem!important;
-    margin-left: 15rem!important;
+    margin-bottom: 11rem!important;
+    margin-left: 24rem!important;
 }
 #second{
     /*background-color: #d35400;*/
@@ -249,15 +249,15 @@ html{
     background-color: #e67e22;
 }
 .progress-bar{
-    animation: progress-bar 2s;
-    /*animation-delay: 10s;*/
+    animation: progress-bar 10s;
+    animation-delay: 10s;
 }
 @keyframes progress-bar{
     0%{
         width: 0%;
     }
     100%{
-        width: 35%;
+        width: 40%;
     }
 }
 #fourth{
