@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -149,6 +152,15 @@ html{
     height: 9vh;
   /*background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(pics/1.png);*/
 }
+#carouselExampleCaptions  .jello h5{
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family: 'Faster One', cursive!important;
+}
+#carouselExampleCaptions .carousel-caption{
+    font-family: 'Comfortaa', cursive!important;
+    /*font-family: 'Faster One', cursive;*/
+
+}
 .icon{
 	position: absolute;
 	top: 20px;
@@ -170,16 +182,20 @@ html{
     z-index:11111111111;   
 }
 #container{
+    /*font-family: 'Inconsolata', monospace;*/
     background-color: #e67e22;
     clip-path: polygon(100% 0%, 100% 96%, 50% 100%, 0 96%, 0 0);
     /*background-image: linear-gradient(to right, #16a085, #2ecc71);*/
     /*background-color: #d35400;*/
     /*clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
 }
+#container h1{
+    /*font-family: 'Source Serif 4', sans-serif;*/
+    font-family: 'Bungee Shade', cursive;
+}
 #box{
     flex-basis: 27rem;
-    box-shadow: 10px 10px 12px black;
-    
+    box-shadow: 9px 22px 42px black;    
 }
 #box hr{
     height: .9rem;
@@ -190,6 +206,7 @@ html{
 }
 #box p{
     text-align: justify;
+    font-family: 'Comfortaa', cursive;
 }
 #img1 img{
     width: 13.35rem;
@@ -200,6 +217,10 @@ html{
     height: 20rem;
     /*opacity:.8;*/
     border-radius: 10%;
+}
+#carouselExampleCaptions .carousel-caption{
+    background: rgb(0, 0, 0)!important; /* Fallback color */
+    background: rgba(0, 0, 0, 0.5)!important; /* Black background with 0.5 opacity */
 }
 #carouselExampleSlidesOnly1 .carousel-caption{
     margin-bottom: 13rem!important;
@@ -217,9 +238,49 @@ html{
     margin-bottom: 11rem!important;
     margin-left: 15rem!important;
 }
+.alert{
+    font-family: 'Comfortaa', cursive;
+}
 #second{
+    /*background-color: #3f417f;*/
     /*background-color: #d35400;*/
-    clip-path: polygon(100% 0%, 100% 96%, 50% 100%, 0 96%, 0 0);
+    clip-path: polygon(100% 0%, 100% 98%, 50% 100%, 0 98%, 0 0);
+}
+#second .card{
+    box-shadow: 9px 22px 42px black;;
+}
+#content1{
+    /*font-family: 'Comfortaa', cursive;*/
+}
+#second h4 ,h1, h6{
+    /*font-family: 'Bungee Shade', cursive;*/
+    font-family: 'Faster One', cursive;
+}
+#second .para1{
+    font-family: 'Comfortaa', cursive;
+}
+#content1 #steps ,#accordionFlushExample h2{
+    font-family: 'Comfortaa', cursive!important;
+}
+#second p ,#accordionFlushExample1{
+    font-family: 'Comfortaa', cursive;   
+}
+.glow {
+  font-size: 50px;
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 .box1 #bo1, #bo2{
     box-shadow: 9px 22px 42px black;
@@ -249,9 +310,24 @@ html{
 #vehicles{
     background-color: #e67e22;
 }
+#vehicles p, .box1{
+    font-family: 'Comfortaa', cursive;
+}
+#vehicles h6,h2,h3{
+    font-family: 'Faster One', cursive;
+}
+#location p, iframe{
+    font-family: 'Comfortaa', cursive;
+  }
+#location iframe{
+    box-shadow: 9px 22px 42px black;;
+}  
 #why::-webkit-scrollbar {
     display: none;
   }
+  #why p{
+    font-family: 'Comfortaa', cursive;
+  }  
 #pbar {
     width: 0%;
     height: 50px; 
@@ -317,6 +393,9 @@ html{
 #fiveth #content5{
     letter-spacing: .2rem;
 }
+#fiveth p{
+    font-family: 'Comfortaa', cursive;
+}
 .box4{
     flex-basis: 30rem;
     box-shadow: 2px 1px 5px white;
@@ -329,6 +408,9 @@ html{
 #sixth{
     background-color: whitesmoke;
 }
+#sixth p{
+    font-family: 'Comfortaa', cursive;
+}
 #box5 .box6:hover{
     box-shadow: 0 0 10px 5px white;
     border-radius: 20%;
@@ -337,7 +419,7 @@ html{
     transition: 0.3s;
 }
 .box6{
-    box-shadow: 2px 1px 5px black;
+    box-shadow: 9px 22px 42px black;
     border-radius: 30%;
     flex-basis: 25rem;
 }
@@ -346,9 +428,13 @@ html{
 }
 #comments{
     background-color: #e67e22;
+    font-family: 'Comfortaa', cursive;
 }
 #seventh{
     background-color: #2C3A47;
+}
+#seventh a{
+    font-family: 'Comfortaa', cursive;
 }
 #last div{
     flex-basis: 25rem;
@@ -364,7 +450,25 @@ html{
         width: 100%;
         height: 100vh;
     }
-    
+    #carouselExampleSlidesOnly1 .carousel-caption{
+    margin-bottom: -1.2rem!important;
+    /*margin-top: 56rem!important;*/
+    margin-left: 10.5rem!important;
+}
+    #steps #step1 {
+    margin-bottom: -1rem!important;
+    margin-left: 3rem!important;
+}
+    #steps #step2 {
+    width: 75%!important;
+    /* margin-top: 55rem!important; */
+    margin-left: 2rem!important;
+}
+#steps #step3 {
+    margin-bottom: -3rem!important;
+    margin-left: 2rem!important;
+    width: 75%!important;
+}
     .alert{
         width: 100%!important;
     }
