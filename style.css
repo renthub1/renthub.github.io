@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +12,6 @@
 }
 html{
     font-size: 93.75%;
-    /*font-family: 'Balsamiq Sans', cursive;*/
     scroll-behavior: smooth;
 }
 #loader{
@@ -17,10 +20,8 @@ html{
 }
 #head{
     height: 9vh;
-    /*background-color: #e67e22;*/
     z-index: 111111;
     box-shadow: 9px 22px 42px black;
-    /*box-shadow: 0px 15px 10px -15px #979797;*/
 }
 #logo{
     width: 20%;
@@ -45,41 +46,20 @@ html{
 #menu li{
     display: inline;
     line-height: 4;
-    /*background-color: #e67e22;*/
-    /*box-shadow: 0px 0px 2px #ecf0f1;*/
-}
-#menu li:hover{
-    /*background-color: black;*/
-    /*background-color: #e67e22;*/
-    /*transition: 1.2s;*/
-    /*color: #e67e22!important;*/
 }
 .menu_list{
     position: relative;
-    /*margin: 270px auto 0;*/
-    /*width: 590px;*/
-    /*height: 50px;*/
-    /*background: #34495e;*/
-    /*border-radius: 8px;*/
-    /*box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);*/
 }
 .menu_list a{
-    /*font-size: 15px;*/
-    /*text-transform: uppercase;*/
     color: white;
-    /*text-decoration: none;*/
     line-height: 50px;
     position: relative;
     z-index: 1;
-    /*display: inline-block;*/
-    /*text-align: center;*/
 }
 .menu_list .animation{
     position: absolute;
-    height: 100%;
-    /* height: 5px; */
-    top: 0;
-    /* bottom: 0; */
+     height: 6px; 
+    top: 55px;
     z-index: 0;
     background: #e67e22;
     border-radius: 8px;
@@ -150,15 +130,12 @@ html{
 }
 #car{
     height: 9vh;
-  /*background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(pics/1.png);*/
 }
 #carouselExampleCaptions  .jello h5{
-    /*font-family: 'Comfortaa', cursive;*/
     font-family: 'Faster One', cursive!important;
 }
 #carouselExampleCaptions .carousel-caption{
     font-family: 'Comfortaa', cursive!important;
-    /*font-family: 'Faster One', cursive;*/
 
 }
 .icon{
@@ -167,7 +144,6 @@ html{
 	right: 20px;
     opacity: 0;
     visibility: hidden;
-    /*font-size: 2rem!important;*/
     color: white;
 }
 .yell{
@@ -182,15 +158,10 @@ html{
     z-index:11111111111;   
 }
 #container{
-    /*font-family: 'Inconsolata', monospace;*/
     background-color: #e67e22;
     clip-path: polygon(100% 0%, 100% 96%, 50% 100%, 0 96%, 0 0);
-    /*background-image: linear-gradient(to right, #16a085, #2ecc71);*/
-    /*background-color: #d35400;*/
-    /*clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
 }
 #container h1{
-    /*font-family: 'Source Serif 4', sans-serif;*/
     font-family: 'Bungee Shade', cursive;
 }
 #box{
@@ -215,7 +186,6 @@ html{
 #whatsapp {
     flex-basis: 20rem;
     height: 20rem;
-    /*opacity:.8;*/
     border-radius: 10%;
 }
 #carouselExampleCaptions .carousel-caption{
@@ -242,18 +212,16 @@ html{
     font-family: 'Comfortaa', cursive;
 }
 #second{
-    /*background-color: #3f417f;*/
-    /*background-color: #d35400;*/
     clip-path: polygon(100% 0%, 100% 98%, 50% 100%, 0 98%, 0 0);
 }
 #second .card{
     box-shadow: 9px 22px 42px black;;
 }
 #content1{
-    /*font-family: 'Comfortaa', cursive;*/
+    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(pics/1.png);*/
+    /*background-size: cover;*/
 }
 #second h4 ,h1, h6{
-    /*font-family: 'Bungee Shade', cursive;*/
     font-family: 'Faster One', cursive;
 }
 #second .para1{
@@ -298,11 +266,7 @@ html{
     color: white;
 }
 .box2{
-    /*box-shadow: 9px 22px 42px black;*/
-    /*border-radius: 50%;*/
-    /*background-color: #d35400;*/
     flex-basis: 28rem;
-    /*opacity: .89;*/
 }
 .box2 img{
     width: 6rem;    
@@ -331,7 +295,6 @@ html{
 #pbar {
     width: 0%;
     height: 50px; 
-    /*color: #000000;*/
     background-color: green;
     animation: animateskillbar1 1s 2s cubic-bezier(1,0,0.5,1) forwards;
   }
@@ -387,7 +350,6 @@ html{
     to{right: 85%;}
 }
 #fiveth{
-    /*opacity: 1;*/
     background-color: #e67e22;
 }
 #fiveth #content5{
@@ -407,6 +369,15 @@ html{
 }
 #sixth{
     background-color: whitesmoke;
+}
+#sixth h1{
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat Subrayada', sans-serif!important;*/
+    /*font-family: 'Sedgwick Ave Display', cursive;*/
+}
+#sixth h3{
+    font-family: 'Montserrat Subrayada', sans-serif!important;
+    /*font-family: 'Fresca', sans-serif;*/
 }
 #sixth p{
     font-family: 'Comfortaa', cursive;
@@ -452,7 +423,6 @@ html{
     }
     #carouselExampleSlidesOnly1 .carousel-caption{
     margin-bottom: -1.2rem!important;
-    /*margin-top: 56rem!important;*/
     margin-left: 10.5rem!important;
 }
     #steps #step1 {
@@ -526,12 +496,7 @@ html{
         visibility: visible;
     }
     #menu.responsive_menu{
-        /*background: #e67e22;*/
         width: 50%!important;
-        /*height: 100vh!important;*/
-        /*position: fixed;*/
-        /*z-index: 999999;*/
-        /*top: 5rem;*/
     }
     #menu.responsive_menu ul li{
         float: none;
