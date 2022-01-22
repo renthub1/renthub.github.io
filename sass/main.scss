@@ -131,17 +131,6 @@ html{
     background: white url('images/renthub.gif') no-repeat center center;
     z-index: 9999999;
 }
-.first 
-	h1{
-	font-family: $righteous;
-	}
-	span{
-	font-family: $rakesly;                                              	
-}
-h2{
-	font-family: $rakesly;
-	letter-spacing: .2rem;
-}
 .two{
 	@include bg('images/bg1.png');
 	height: 130vh;
@@ -306,7 +295,7 @@ span{
 .eight{
 	@include bg('images/bg3.png');
 	width: 100%;
-	height: 110vh;
+	height: 120vh;
 	h5{
 		font-family: $righteous;
 		color: #3c0f0f;
@@ -345,7 +334,6 @@ span{
 		color: #e06d07;
 		border:5px solid #3c0f0f;
 		border-radius: 14px;
-		margin: 0 60rem;
 	}
 	h1{
 		font-family: $fresca;

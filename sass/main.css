@@ -148,20 +148,6 @@ html {
   z-index: 9999999;
 }
 
-.first
-h1 {
-  font-family: "Righteous", cursive;
-}
-
-span {
-  font-family: "Rakesly", sans-serif;
-}
-
-h2 {
-  font-family: "Rakesly", sans-serif;
-  letter-spacing: .2rem;
-}
-
 .two {
   background-image: url("images/bg1.png");
   background-repeat: no-repeat;
@@ -380,7 +366,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
 }
 
 .eight h5 {
@@ -433,7 +419,6 @@ h6 {
   color: #e06d07;
   border: 5px solid #3c0f0f;
   border-radius: 14px;
-  margin: 0 60rem;
 }
 
 .nine h1 {
