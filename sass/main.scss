@@ -342,6 +342,9 @@ span{
 	p{
 		font-family: $righteous;
 	}
+	.d-flex >div{
+		margin: 2rem 0;
+	}
 	#box6 img{
 		border-radius: 20%;
 	}
@@ -414,6 +417,9 @@ span{
 @media(max-width:1230px){
 	.two{
 		height: auto;
+	}
+	#three .cara{
+		width: 100%!important;
 	}
 	.five{
 		height: auto;

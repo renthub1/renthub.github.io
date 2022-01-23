@@ -430,6 +430,10 @@ h6 {
   font-family: "Righteous", cursive;
 }
 
+.nine .d-flex > div {
+  margin: 2rem 0;
+}
+
 .nine #box6 img {
   border-radius: 20%;
 }
@@ -525,6 +529,9 @@ h6 {
 @media (max-width: 1230px) {
   .two {
     height: auto;
+  }
+  #three .cara {
+    width: 100% !important;
   }
   .five {
     height: auto;
