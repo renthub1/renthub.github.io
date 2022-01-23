@@ -33,6 +33,12 @@ html {
   color: #3c0f0f;
 }
 
+.menu li:hover {
+  color: #e06d07;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 .menu .animation {
   position: relative;
   height: 6px;
@@ -530,15 +536,6 @@ h6 {
 @media (max-width: 1230px) {
   #three .cara {
     width: 100% !important;
-  }
-  .five {
-    height: auto;
-  }
-  .eight {
-    height: auto;
-  }
-  .nine {
-    height: auto;
   }
 }
 
