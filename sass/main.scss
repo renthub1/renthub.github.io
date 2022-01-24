@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fresca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
-@import url('http://fonts.cdnfonts.com/css/rakesly');
+@import url('https://fonts.cdnfonts.com/css/rakesly');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 // variables
@@ -136,7 +136,7 @@ html{
     z-index: 9999999;
 }
 .two{
-	@include bg('images/bg1.png');
+	@include bg('images/bg1.webp');
 	height: 130vh;
 h2{
 	font-family: $righteous;
@@ -213,7 +213,7 @@ ol{
 	font-family: $comfortaa;
 }
 .five{
-	@include bg('images/bg2.png');
+	@include bg('images/bg2.webp');
 	width: 100%;
 } 
 .five h1{
@@ -298,7 +298,7 @@ span{
 	}
 }
 .eight{
-	@include bg('images/bg3.png');
+	@include bg('images/bg3.webp');
 	width: 100%;
 	height: auto;
 	h5{
@@ -331,7 +331,7 @@ span{
 	}
 }
 .nine{
-	@include bg('images/bg4.png');
+	@include bg('images/bg4.webp');
 	width: 100%;
 	h6{
 		font-family:$rakesly;
