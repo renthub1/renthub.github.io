@@ -171,8 +171,8 @@ html {
 }
 
 .two .img1 img {
-  width: 768px;
-  height: 601px;
+  width: 625px;
+  height: 489px;
 }
 
 .box1 {
@@ -504,7 +504,7 @@ h6 {
   transition: 1s;
 }
 
-.ten h6 {
+.ten h2 {
   font-family: "Righteous", cursive;
   color: #3c0f0f;
 }
@@ -539,6 +539,12 @@ h6 {
   }
 }
 
+@media (max-width: 990px) {
+  .two {
+    height: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .two {
     height: auto;
@@ -546,8 +552,9 @@ h6 {
   .progress {
     width: 100%;
   }
-  .img1 {
-    width: 100%;
+  .img1 img {
+    width: 100% !important;
+    height: auto !important;
   }
   #three .cara {
     width: 100% !important;
