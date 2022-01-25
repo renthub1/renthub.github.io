@@ -465,6 +465,7 @@ h6 {
           transform: translateY(-20px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .nine .comments {
@@ -497,12 +498,37 @@ h6 {
   -webkit-box-shadow: 10px 20px 27px black;
           box-shadow: 10px 20px 27px black;
   background-color: #e67e22;
+  font-family: "Comfortaa", cursive !important;
+}
+
+.ten .p-2 {
+  overflow-y: auto;
+}
+
+.ten .offcanvas-bottom {
+  height: auto;
+}
+
+.ten .btn-close {
+  position: inherit;
+  right: 0;
 }
 
 .ten div a:hover {
   color: #3c0f0f !important;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.ten .butt:hover {
+  color: #3c0f0f !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ten .butt {
+  margin: 0 6rem;
+  cursor: pointer;
 }
 
 .ten h2 {

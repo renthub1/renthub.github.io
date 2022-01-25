@@ -369,6 +369,7 @@ span{
 		color: white;
 		transform: translateY(-20px);
 		transition: 0.3s;
+		cursor: pointer;
 	}
 	.comments{
 		background-color: rgb(244, 174, 121);
@@ -391,10 +392,29 @@ span{
 		flex-basis: 37rem;
 		box-shadow: 10px 20px 27px black;
 		background-color: #e67e22;
+		font-family: $comfortaa;
 	}
-	div a:hover{
+	.p-2{
+		overflow-y: auto;
+	}
+	.offcanvas-bottom{
+		height: auto;
+	}
+	.btn-close{
+		position: inherit;
+		right: 0;
+	}
+	div a:hover{	
 		color: #3c0f0f!important;
 		transition: 1s;
+	}
+	.butt:hover{
+		color: #3c0f0f!important;
+		transition: 1s;
+	}
+	.butt{
+		margin: 0 6rem;
+		cursor: pointer;
 	}
 	h2{
 		font-family: $righteous;
