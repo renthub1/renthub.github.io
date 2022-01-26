@@ -21,6 +21,10 @@ html{
 	font-size: 10px;
 	scroll-behavior: smooth;
 }
+noscript iframe{
+	display: none!important;
+	visibility: hidden;
+}
 .header{
 	height: 9vh;
 }
@@ -178,6 +182,9 @@ button{
 .three h5{
 	font-family: $righteous;
 	color: #3c0f0f;
+}
+.progress-bar{
+	width: 100%;
 }
 ol{
 	font-family: $comfortaa;
