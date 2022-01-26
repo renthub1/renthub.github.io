@@ -413,7 +413,7 @@ span{
 		transition: 1s;
 	}
 	.butt{
-		margin: 0 6rem;
+		margin: 0 6rem!important;
 		cursor: pointer;
 	}
 	h2{
@@ -464,8 +464,13 @@ span{
 		width: 100%!important;
 		height: auto!important;
 	}
-	#three .cara{
+	#three{
+	.cara{
 		width: 100%!important;
+	}
+	#carouselExampleCaptions img{
+		width: 100%!important;
+	}
 	}
 	.menu{
 	display: none;
