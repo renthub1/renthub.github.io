@@ -9,6 +9,11 @@ $fresca:'Fresca', sans-serif;
 $righteous:'Righteous', cursive;
 $rakesly:'Rakesly', sans-serif;
 $comfortaa:"Comfortaa", cursive!important;
+$whi:white;
+$bro:#3c0f0f;
+$yel0:#e06d07;
+$yel1:#f27c22;
+$bla:black;
 
 //mixins
 @mixin bg($imgpath) {
@@ -43,10 +48,10 @@ noscript iframe{
 	line-height: 4;
 	font-family: $righteous;
 	margin: .5rem;
-	color: #3c0f0f;
+	color: $bro;
 }
 .menu li:hover{
-	color: #e06d07;
+	color: $yel0;
 	transition: .6s;
 }
 .menu .animation {
@@ -54,7 +59,7 @@ noscript iframe{
 	height: 6px;
 	top: -19px;
 	z-index: 0;
-	background: #e67e22;
+	background: $yel0;
 	border-radius: 8px;
 	transition: all .5s ease 0s; }
   
@@ -131,7 +136,7 @@ noscript iframe{
 	font-family: $righteous;
 }
 .offcanvas-body li:hover{
-	background-color: #f27c22;
+	background-color: $yel1;
 	color: white!important;
 	transition: .5s;
 }	
@@ -147,7 +152,7 @@ h2{
 }
  p{
 	font-family: $comfortaa;	
-	color: #3c0f0f;	
+	color: $bro;	
 }
 .img1 img{
 	width: 625px;
@@ -160,7 +165,7 @@ h2{
 	width: 27rem;
 hr{
 	height: .9rem;
-	background-color: #3c0f0f;
+	background-color: $bro;
 }
 h3{
 	font-family: $righteous;
@@ -177,11 +182,11 @@ button{
 } 
 .three h4{
 	font-family: $righteous;
-	color: #3c0f0f;
+	color: $bro;
 }
 .three h5{
 	font-family: $righteous;
-	color: #3c0f0f;
+	color: $bro;
 }
 .progress-bar{
 	width: 100%;
@@ -204,7 +209,7 @@ ol{
 	margin-bottom:4rem!important;
 }
 .cap2 a:hover{
-	color: white!important;
+	color: $whi!important;
 	transition:1s;
 }
 .cap3{
@@ -214,7 +219,7 @@ ol{
 .four 
  h6{
 	font-family: $righteous;
-	color: #3c0f0f;
+	color: $bro;
 }
 .four p{
 	font-family: $comfortaa;
@@ -225,7 +230,7 @@ ol{
 } 
 .five h1{
 	font-family: $righteous;
-	color: #3c0f0f;
+	color: $bro;
 }
 .five p{
 	font-family: $righteous;
@@ -244,7 +249,7 @@ span{
 }
 .box2 #bo1, #bo2 {
 	border-radius: 4%;
-	box-shadow: 10px 10px 18px black;
+	box-shadow: 10px 10px 18px $bla;
 	width: 24rem; }
   
   .box2 .but {
@@ -258,11 +263,11 @@ span{
 	transition: 0.5s;
 	color: white; }
 .six ,iframe{
-	box-shadow: 9px 22px 42px black;
+	box-shadow: 9px 22px 42px $bla;
 	border-radius: 4%;
 	h2{
 		font-family: $righteous;
-		color: #3c0f0f;
+		color: $bla;
 	}
 	p{
 		font-family: $comfortaa;
@@ -271,30 +276,30 @@ span{
 .seven{
 	h3{
 		font-family: $righteous;
-		border: 8px dashed #f27c22;
+		border: 8px dashed $yel1;
 		border-radius: 4%;
-		color: #3c0f0f;
+		color: $bro;
 	}
 	h4{
 		font-family: $righteous;
-		color: #3c0f0f;
+		color: $bro;
 	}
 	p{
 		font-family: $comfortaa;
 	}
 	.rounded-3{
 		padding: 1rem;
-		border: 6px dashed #f27c22!important;
+		border: 6px dashed $yel1!important;
 		border-radius: 9%!important;
 		box-shadow: 9px 22px 42px black;
 		margin-bottom: 1rem;
 	}
 	.box3{
 		height: 40vh;
-		background-color: #f27c22;
+		background-color: $yel1;
 		border-radius:20px;
 		border: 0 solid yellow;
-		box-shadow: 9px 22px 42px #f27c22;
+		box-shadow: 9px 22px 42px $yel1;
 		transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 		span{
 			font-family: $righteous;
@@ -310,7 +315,7 @@ span{
 	height: auto;
 	h5{
 		font-family: $righteous;
-		color: #3c0f0f;
+		color: $bro;
 	}
 	p{
 		font-family: $comfortaa;
@@ -339,7 +344,7 @@ span{
 		transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 	}
 	.box5 div{
-		color: #3c0f0f;
+		color: $bro;
 	}
 }
 .nine{
@@ -348,13 +353,13 @@ span{
 	h6{
 		font-family:$rakesly;
 		letter-spacing: .3rem;
-		color: #e06d07;
-		border:5px solid #3c0f0f;
+		color: $yel0;
+		border:5px solid $bro;
 		border-radius: 14px;
 	}
 	h1{
 		font-family: $fresca;
-		color: #3c0f0f;
+		color: $bro;
 	}
 	p{
 		font-family: $righteous;
@@ -366,14 +371,14 @@ span{
 		border-radius: 20%;
 	}
 	.box7{
-		box-shadow: 9px 22px 42px black;
+		box-shadow: 9px 22px 42px $bla;
 		border-radius: 30%;
 		flex-basis: 37rem;
 	}
 	#box6 .box7:hover{
 		box-shadow: 0 0 10px 5px white;
 		border-radius: 20%;
-		color: white;
+		color: $whi;
 		transform: translateY(-20px);
 		transition: 0.3s;
 		cursor: pointer;
@@ -398,8 +403,8 @@ span{
 	}
 	div{
 		flex-basis: 37rem;
-		box-shadow: 10px 20px 27px black;
-		background-color: #e67e22;
+		box-shadow: 10px 20px 27px $bla;
+		background-color: $yel0;
 		font-family: $comfortaa;
 	}
 	.p-2{
@@ -413,11 +418,11 @@ span{
 		right: 0;
 	}
 	div a:hover{	
-		color: #3c0f0f!important;
+		color: $bro!important;
 		transition: 1s;
 	}
 	.butt:hover{
-		color: #3c0f0f!important;
+		color: $bro!important;
 		transition: 1s;
 	}
 	.butt{
@@ -426,7 +431,7 @@ span{
 	}
 	h2{
 		font-family: $righteous;
-		color: #3c0f0f;
+		color: $bro;
 	}
 	a{
 		font-family: $comfortaa;
