@@ -1,1 +1,1 @@
-/www.renthub.co.in/ /renthub.co.in 301
+/https://www.renthub.co.in/ /https://renthub.co.in 301
