@@ -13,17 +13,65 @@ noscript iframe {
   visibility: hidden;
 }
 
-.header {
-  height: 9vh;
+#loader {
+  background: white url("images/renthub.gif") no-repeat center center;
+  z-index: 9999999;
 }
 
-#header {
-  position: fixed;
-  top: -143px;
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s;
+#carouselExampleCaption {
+  -webkit-box-shadow: 0px 0px 11px 2px black;
+          box-shadow: 0px 0px 11px 2px black;
+  border-radius: 16pt;
+}
+
+#carouselExampleCaption img {
+  border-radius: 17pt !important;
+}
+
+#carouselExampleCaption video {
+  border-radius: 17pt !important;
+}
+
+#box6 video {
+  border-radius: 20%;
+}
+
+#carouselExampleCaption .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.655555);
+}
+
+#carouselExampleCaption .carousel-caption1 {
+  position: absolute !important;
+  right: 15% !important;
+  bottom: 1.25rem !important;
+  left: 15% !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  text-align: center !important;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #e06d07;
+  width: 0%;
+}
+
+.head {
   background-color: rgba(255, 255, 255, 0.855555);
-  z-index: 1111111111;
+  -webkit-box-shadow: 9px 22px 42px black;
+          box-shadow: 9px 22px 42px black;
+  z-index: 1111111111111;
+}
+
+.header {
+  height: 9vh;
 }
 
 .menu {
@@ -154,16 +202,20 @@ noscript iframe {
   transition: .5s;
 }
 
-#loader {
-  background: white url("images/renthub.gif") no-repeat center center;
-  z-index: 9999999;
-}
-
 .two {
   background-image: url("images/bg1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 130vh;
+}
+
+.two #header {
+  position: fixed;
+  top: -143px;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  background-color: rgba(255, 255, 255, 0.655555);
+  z-index: 1111111111;
 }
 
 .two h2 {
@@ -180,23 +232,23 @@ noscript iframe {
   height: 489px;
 }
 
-.box1 {
+.two .box1 {
   border-radius: 4%;
   -webkit-box-shadow: 10px 20px 27px black;
           box-shadow: 10px 20px 27px black;
   width: 27rem;
 }
 
-.box1 hr {
+.two hr {
   height: .9rem;
   background-color: #3c0f0f;
 }
 
-.box1 h3 {
+.two h3 {
   font-family: "Righteous", cursive;
 }
 
-.box1 button {
+.two button {
   font-family: "Comfortaa", cursive !important;
 }
 
@@ -218,45 +270,44 @@ noscript iframe {
   color: #3c0f0f;
 }
 
-.progress-bar {
+.three .progress-bar {
   width: 100%;
 }
 
-ol {
+.three ol {
   font-family: "Comfortaa", cursive !important;
 }
 
-#carouselExampleCaptions img {
+.three #carouselExampleCaptions img {
   width: 480px !important;
 }
 
-#carouselExampleCaptions {
+.three #carouselExampleCaptions {
   font-family: "Comfortaa", cursive !important;
 }
 
-.cap1 {
+.three .cap1 {
   margin-left: 17rem !important;
   margin-bottom: 36rem !important;
 }
 
-.cap2 {
+.three .cap2 {
   margin-left: 17rem !important;
   margin-bottom: 4rem !important;
 }
 
-.cap2 a:hover {
+.three .cap2 a:hover {
   color: white !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.cap3 {
+.three .cap3 {
   margin-left: 25rem !important;
   margin-bottom: 21rem !important;
 }
 
-.four
-h6 {
+.four h6 {
   font-family: "Righteous", cursive;
   color: #3c0f0f;
 }
@@ -282,32 +333,32 @@ h6 {
   word-spacing: .2rem;
 }
 
-.box2 li {
+.five .box2 li {
   background-color: #fff0;
   font-family: "Comfortaa", cursive !important;
   font-weight: bolder;
   border: none;
 }
 
-.box2 span {
+.five span {
   font-family: "Comfortaa", cursive !important;
   font-weight: bolder;
 }
 
-.box2 #bo1, #bo2 {
+.five .box2 #bo1, .five #bo2 {
   border-radius: 4%;
   -webkit-box-shadow: 10px 10px 18px black;
           box-shadow: 10px 10px 18px black;
   width: 24rem;
 }
 
-.box2 .but {
+.five .box2 .but {
   border: 1px double white;
   border-radius: .29rem;
   background-color: white;
 }
 
-.box2 .but:hover {
+.five .box2 .but:hover {
   -webkit-box-shadow: 0 0 5px #e06d07;
           box-shadow: 0 0 5px #e06d07;
   background-color: #e67e22;
@@ -316,18 +367,18 @@ h6 {
   color: white;
 }
 
-.six, iframe {
-  -webkit-box-shadow: 9px 22px 42px black;
-          box-shadow: 9px 22px 42px black;
+.six, .six iframe {
+  -webkit-box-shadow: 9px 22px 42px black !important;
+          box-shadow: 9px 22px 42px black !important;
   border-radius: 4%;
 }
 
-.six h2, iframe h2 {
+.six h2 {
   font-family: "Righteous", cursive;
   color: black;
 }
 
-.six p, iframe p {
+.six p {
   font-family: "Comfortaa", cursive !important;
 }
 
@@ -336,6 +387,8 @@ h6 {
   border: 8px dashed #f27c22;
   border-radius: 4%;
   color: #3c0f0f;
+  -webkit-box-shadow: 7px 6px 36px black;
+          box-shadow: 7px 6px 36px black;
 }
 
 .seven h4 {
@@ -555,6 +608,9 @@ h6 {
     width: 100% !important;
     text-align: center !important;
   }
+  .head {
+    position: relative !important;
+  }
   .header .menu {
     opacity: 0;
     visibility: hidden;
@@ -565,8 +621,8 @@ h6 {
     visibility: hidden;
   }
   .navbar-light {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 
