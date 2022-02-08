@@ -286,6 +286,11 @@ noscript iframe {
   font-family: "Comfortaa", cursive !important;
 }
 
+.three .carousel-caption {
+  -webkit-box-shadow: 2px 10px 16px black;
+          box-shadow: 2px 10px 16px black;
+}
+
 .three .cap1 {
   margin-left: 17rem !important;
   margin-bottom: 36rem !important;
