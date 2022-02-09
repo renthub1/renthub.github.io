@@ -4,4 +4,3 @@ Disallow: sass/style.css/
 Allow: 404.html
 Allow: ads.txt
 Sitemap: sitemap.xml
-Allow: wwww.renthub.co.in/index.html
