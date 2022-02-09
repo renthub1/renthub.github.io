@@ -51,14 +51,16 @@ noscript iframe {
 }
 
 .progress-container {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 8px;
+  height: 10px;
   background: #ccc;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 8px;
+  height: 10px;
   background: #e06d07;
   width: 0%;
 }
@@ -250,6 +252,11 @@ noscript iframe {
 
 .two button {
   font-family: "Comfortaa", cursive !important;
+}
+
+.blog1 img {
+  width: 480px;
+  height: 480px;
 }
 
 .three .alert {
@@ -628,6 +635,10 @@ noscript iframe {
   .navbar-light {
     opacity: 1 !important;
     visibility: visible !important;
+  }
+  .progress-container {
+    position: fixed;
+    top: 0;
   }
 }
 
