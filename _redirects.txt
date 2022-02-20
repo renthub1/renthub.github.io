@@ -1,1 +1,6 @@
-/www.renthub.co.in/ /renthub.co.in 301
+/www.renthub.co.in /renthub.co.in 301
+https://www.renthub.co.in/services.html /renthub.co.in 301
+https://www.renthub.co.in/conditions.html /renthub.co.in 301
+http://www.renthub.co.in/RcLMZ/ /renthub.co.in 301
+http://www.renthub.co.in/about_us.php /renthub.co.in 301
+
