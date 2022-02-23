@@ -59,6 +59,13 @@ noscript iframe{
     padding-bottom: 1.25rem!important;
     text-align: center!important;
 }
+
+.img1.animate__animated{
+	opacity: 1!important;
+}
+.img1{
+	opacity: 0;
+}
 .progress-container {
 	position: absolute;  
 	bottom: 0;
@@ -184,8 +191,6 @@ noscript iframe{
 .two{
 	@include bg('images/bg1.webp');
 	height: 130vh;
-
-
 #header{
 	position: fixed;
 	top: -143px;
@@ -193,7 +198,6 @@ noscript iframe{
 	background-color: rgba(255, 255, 255, 0.655555);
 	z-index: 1111111111;
 }	
-	
 h2{
 	font-family: $righteous;
 }
@@ -222,9 +226,39 @@ button{
 }
 }
 // rudranath blog section properties
-.blog1 img{
+#carouselExampleCaption1{
+h5{
+	font-family: $fresca;
+}
+}
+.blog1{
+h1 span{
+	border-radius: 14px;
+	border:5px solid#3c0f0f;
+}	
+p{
+	font-family: $rakesly;
+	letter-spacing: 3px;
+	text-shadow: 1px 2px 4px #000000bf;
+	font-weight: 900;
+	font-size: 1.9rem;
+}
+h1{
+	font-family: $fresca;
+	text-shadow: 3px 4px 4px $bla;
+	letter-spacing: 2px;
+}	
+h2,h3,h4{
+	font-family: $fresca;
+	text-shadow: 2px 3px 4px $bla;
+}
+img{
 	width: 480px;
 	height: 480px;
+}
+img,video{
+	border-radius: 23px;
+}
 }
 // third section properties
 .three{ 
@@ -422,6 +456,7 @@ p{
 		letter-spacing: .3rem;
 		color: $yel0;
 		border:5px solid $bro;
+		width: 25%;
 		border-radius: 14px;
 	}
 	h2{
@@ -587,7 +622,9 @@ p{
 	.eight{
 		height: auto;
 	}
-	
-	// renthub blogs properties
-	
+	.nine{
+		h6{
+		width: 60%;
+	}
+	}
 }

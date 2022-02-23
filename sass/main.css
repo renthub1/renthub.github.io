@@ -50,6 +50,14 @@ noscript iframe {
   text-align: center !important;
 }
 
+.img1.animate__animated {
+  opacity: 1 !important;
+}
+
+.img1 {
+  opacity: 0;
+}
+
 .progress-container {
   position: absolute;
   bottom: 0;
@@ -254,9 +262,41 @@ noscript iframe {
   font-family: "Comfortaa", cursive !important;
 }
 
+#carouselExampleCaption1 h5 {
+  font-family: "Fresca", sans-serif;
+}
+
+.blog1 h1 span {
+  border-radius: 14px;
+  border: 5px solid #3c0f0f;
+}
+
+.blog1 p {
+  font-family: "Rakesly", sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 1px 2px 4px #000000bf;
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+.blog1 h1 {
+  font-family: "Fresca", sans-serif;
+  text-shadow: 3px 4px 4px black;
+  letter-spacing: 2px;
+}
+
+.blog1 h2, .blog1 h3, .blog1 h4 {
+  font-family: "Fresca", sans-serif;
+  text-shadow: 2px 3px 4px black;
+}
+
 .blog1 img {
   width: 480px;
   height: 480px;
+}
+
+.blog1 img, .blog1 video {
+  border-radius: 23px;
 }
 
 .three .alert {
@@ -502,6 +542,7 @@ noscript iframe {
   letter-spacing: .3rem;
   color: #e06d07;
   border: 5px solid #3c0f0f;
+  width: 25%;
   border-radius: 14px;
 }
 
@@ -695,6 +736,9 @@ noscript iframe {
   }
   .eight {
     height: auto;
+  }
+  .nine h6 {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
