@@ -341,11 +341,13 @@ noscript iframe {
 .three .cap1 {
   margin-left: 17rem !important;
   margin-bottom: 36rem !important;
+  background: #f27c22;
 }
 
 .three .cap2 {
   margin-left: 17rem !important;
   margin-bottom: 4rem !important;
+  background: #f27c22;
 }
 
 .three .cap2 a:hover {
@@ -357,6 +359,7 @@ noscript iframe {
 .three .cap3 {
   margin-left: 25rem !important;
   margin-bottom: 21rem !important;
+  background: #f27c22;
 }
 
 .four h6 {
@@ -506,6 +509,7 @@ noscript iframe {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   border-radius: 4px;
+  margin: auto;
 }
 
 .eight .d-flex > div {
@@ -517,9 +521,12 @@ noscript iframe {
   border-radius: 4%;
 }
 
-.eight .d-flex > div:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+.eight > .d-flex .swiper-slide:hover {
+  height: 400px;
+  -webkit-transform: translate(-10%);
+          transform: translate(-10%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
@@ -528,6 +535,10 @@ noscript iframe {
 
 .eight .box5 div {
   color: #3c0f0f;
+}
+
+.eight .swiper-pagination {
+  bottom: 5rem;
 }
 
 .nine {
