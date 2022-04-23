@@ -959,6 +959,20 @@ smartBackspace: true,
 		el: ".swiper-pagination",
 		clickable: true,
 	  },
+	  breakpoints: {
+          420: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          990: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
 	});
   </script>
 <script>
@@ -978,67 +992,5 @@ smartBackspace: true,
 	  });
 	});
   </script>
-  <script>
-	  $(document).load($(window).bind("resize", checkPosition));
-
-function checkPosition()
-{
-    if($(window).width() < 990)
-    {
-        var swiper = new Swiper(".mySwiper", {
-	  slidesPerView: 2,
-	  spaceBetween: 60,
-	  autoplay: {
-		  delay:2500,
-	  },
-	  pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	  },
-	});
-    } else {
-		var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-		spaceBetween: 30,
-		pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	  },
-		});
-    }
-}
-  </script>
-  <script>
-	$(document).load($(window).bind("resize", checkPosition));
-
-function checkPosition()
-{
-  if($(window).width() < 600)
-  {
-	  var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 1,
-	// centeredSlides: true,
-	freemode: true,
-	spaceBetween: 90,
-	autoplay: {
-		delay:2500,
-	},
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-  });
-  } else {
-	  var swiper = new Swiper(".mySwiper", {
-	  slidesPerView: 2,
-	  spaceBetween: 30,
-	  pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-	  });
-  }
-}
-</script>
   </body>
 </html>
