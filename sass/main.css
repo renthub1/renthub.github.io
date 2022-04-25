@@ -69,7 +69,8 @@ noscript iframe {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 10px;
-  background: #e06d07;
+  background: #F04B4D;
+  background-color: #F04B4D;
   width: 0%;
 }
 
@@ -93,11 +94,11 @@ noscript iframe {
   line-height: 4;
   font-family: "Righteous", cursive;
   margin: .5rem;
-  color: #3c0f0f;
+  color: #000000;
 }
 
 .menu li:hover {
-  color: #e06d07;
+  color: #F04B4D;
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -107,7 +108,7 @@ noscript iframe {
   height: 6px;
   top: -19px;
   z-index: 0;
-  background: #e06d07;
+  background: #F04B4D;
   border-radius: 8px;
   -webkit-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
@@ -234,7 +235,7 @@ noscript iframe {
 
 .two p {
   font-family: "Comfortaa", cursive !important;
-  color: #3c0f0f;
+  color: #ffffff;
 }
 
 .two .img1 img {
@@ -309,12 +310,16 @@ noscript iframe {
 
 .three h4 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #F04B4D;
 }
 
 .three h5 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #F04B4D;
+}
+
+.three li {
+  color: #F04B4D;
 }
 
 .three .progress-bar {
@@ -341,13 +346,13 @@ noscript iframe {
 .three .cap1 {
   margin-left: 17rem !important;
   margin-bottom: 36rem !important;
-  background: #f27c22;
+  background: #F04B4D;
 }
 
 .three .cap2 {
   margin-left: 17rem !important;
   margin-bottom: 4rem !important;
-  background: #f27c22;
+  background: #F04B4D;
 }
 
 .three .cap2 a:hover {
@@ -359,12 +364,12 @@ noscript iframe {
 .three .cap3 {
   margin-left: 25rem !important;
   margin-bottom: 21rem !important;
-  background: #f27c22;
+  background: #F04B4D;
 }
 
 .four h6 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #F04B4D;
 }
 
 .four p {
@@ -380,7 +385,7 @@ noscript iframe {
 
 .five h2 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #000000;
 }
 
 .five p {
@@ -416,7 +421,7 @@ noscript iframe {
 .five .box2 .but:hover {
   -webkit-box-shadow: 0 0 5px #e06d07;
           box-shadow: 0 0 5px #e06d07;
-  background-color: #e67e22;
+  background-color: #F04B4D;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
@@ -430,7 +435,7 @@ noscript iframe {
 
 .six h2 {
   font-family: "Righteous", cursive;
-  color: black;
+  color: #F04B4D;
 }
 
 .six p {
@@ -439,25 +444,26 @@ noscript iframe {
 
 .seven h3 {
   font-family: "Righteous", cursive;
-  border: 8px dashed #f27c22;
+  border: 8px dashed #F04B4D;
   border-radius: 4%;
-  color: #3c0f0f;
+  color: #F04B4D;
   -webkit-box-shadow: 7px 6px 36px black;
           box-shadow: 7px 6px 36px black;
 }
 
 .seven h4 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #F04B4D;
 }
 
 .seven p {
   font-family: "Comfortaa", cursive !important;
+  color: #F04B4D;
 }
 
 .seven .rounded-3 {
   padding: 1rem;
-  border: 6px dashed #f27c22 !important;
+  border: 6px dashed #F04B4D !important;
   border-radius: 9% !important;
   -webkit-box-shadow: 9px 22px 42px black;
           box-shadow: 9px 22px 42px black;
@@ -466,11 +472,11 @@ noscript iframe {
 
 .seven .box3 {
   height: 40vh;
-  background-color: #f27c22;
+  background-color: #F04B4D;
   border-radius: 20px;
   border: 0 solid yellow;
-  -webkit-box-shadow: 9px 22px 42px #f27c22;
-          box-shadow: 9px 22px 42px #f27c22;
+  -webkit-box-shadow: 9px 22px 42px #F04B4D;
+          box-shadow: 9px 22px 42px #F04B4D;
   -webkit-transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
   transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
   transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
@@ -495,17 +501,18 @@ noscript iframe {
 
 .eight h5 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #ffffff;
 }
 
 .eight p {
   font-family: "Comfortaa", cursive !important;
+  color: #ffffff;
 }
 
 .eight .d-flex .box5 {
   width: 30rem;
   padding: 1rem 1rem 4rem 1rem;
-  background-color: rgba(231, 134, 47, 0.28);
+  background-color: #ffffff38;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   border-radius: 4px;
@@ -551,7 +558,7 @@ noscript iframe {
 .nine h6 {
   font-family: "Rakesly", sans-serif;
   letter-spacing: .3rem;
-  color: #e06d07;
+  color: #F04B4D;
   border: 5px solid #3c0f0f;
   width: 25%;
   border-radius: 14px;
@@ -595,8 +602,8 @@ noscript iframe {
 }
 
 .nine .comments {
-  background-color: #f4ae79;
-  color: #f4ae79;
+  background-color: #F04B4D;
+  color: #F04B4D;
   font-size: 5px;
 }
 
@@ -605,7 +612,7 @@ noscript iframe {
 }
 
 .ten {
-  background-color: #f04b4d;
+  background-color: #F04B4D;
 }
 
 .ten img {
@@ -624,7 +631,7 @@ noscript iframe {
       flex-basis: 37rem;
   -webkit-box-shadow: 10px 20px 27px black;
           box-shadow: 10px 20px 27px black;
-  background-color: #f04b4d;
+  background-color: #F04B4D;
   font-family: "Comfortaa", cursive !important;
 }
 
@@ -660,7 +667,7 @@ noscript iframe {
 
 .ten h2 {
   font-family: "Righteous", cursive;
-  color: #3c0f0f;
+  color: #ffffff;
 }
 
 .ten a {

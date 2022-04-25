@@ -77,7 +77,8 @@ noscript iframe{
   /* The progress bar (scroll indicator) */
   .progress-bar {
 	height: 10px;
-	background: $yel0;
+	background: #F04B4D;
+	background-color: #F04B4D;
 	width: 0%;
   }
 // second section properties 
@@ -97,10 +98,10 @@ noscript iframe{
 	line-height: 4;
 	font-family: $righteous;
 	margin: .5rem;
-	color: $bro;
+	color: #000000;
 }
 .menu li:hover{
-	color: $yel0;
+	color: #F04B4D;
 	transition: .6s;
 }
 .menu .animation {
@@ -108,7 +109,7 @@ noscript iframe{
 	height: 6px;
 	top: -19px;
 	z-index: 0;
-	background: $yel0;
+	background: #F04B4D;
 	border-radius: 8px;
 	transition: all .5s ease 0s; }
   
@@ -203,7 +204,7 @@ h2{
 }
  p{
 	font-family: $comfortaa;	
-	color: $bro;	
+	color: #ffffff;	
 }
 .img1 img{
 	width: 625px;
@@ -270,11 +271,14 @@ p{
 }
 h4{
 	font-family: $righteous;
-	color: $bro;
+	color: #F04B4D;
 }
 h5{
 	font-family: $righteous;
-	color: $bro;
+	color: #F04B4D;
+}
+li{
+	color: #F04B4D;
 }
 .progress-bar{
 	width: 100%;
@@ -294,12 +298,12 @@ ol{
 .cap1{
 	margin-left:17rem!important;
 	margin-bottom:36rem!important;
-	background: #f27c22;
+	background: #F04B4D;
 }
 .cap2{
 	margin-left:17rem!important;
 	margin-bottom:4rem!important;
-	background: #f27c22;
+	background: #F04B4D;
 }
 .cap2 a:hover{
 	color: $whi!important;
@@ -308,14 +312,14 @@ ol{
 .cap3{
 	margin-left:25rem!important;
 	margin-bottom:21rem!important;
-	background: #f27c22;
+	background: #F04B4D;
 }
 }
 // fourth section
 .four{ 
  h6{
 	font-family: $righteous;
-	color: $bro;
+	color: #F04B4D;
 }
 p{
 	font-family: $comfortaa;
@@ -327,7 +331,7 @@ p{
 	width: 100%;
 h2{
 	font-family: $righteous;
-	color: $bro;	
+	color: #000000;	
 }
 p{
 	font-family: $righteous;
@@ -354,7 +358,7 @@ span{
 }
 .box2 .but:hover {
 	box-shadow: 0 0 5px #e06d07;
-	background-color: #e67e22;
+	background-color: #F04B4D;
 	transition: 0.5s;
 	color: white; 
 }
@@ -367,7 +371,7 @@ span{
 }	
 h2{
 	font-family: $righteous;
-	color: $bla;
+	color: #F04B4D;
 }
 p{
 	font-family: $comfortaa;
@@ -377,31 +381,32 @@ p{
 .seven{
 	h3{
 		font-family: $righteous;
-		border: 8px dashed $yel1;
+		border: 8px dashed #F04B4D;
 		border-radius: 4%;
-		color: $bro;
+		color: #F04B4D;
 		box-shadow: 7px 6px 36px $bla;
 	}
 	h4{
 		font-family: $righteous;
-		color: $bro;
+		color: #F04B4D;
 	}
 	p{
 		font-family: $comfortaa;
+		color: #F04B4D;
 	}
 	.rounded-3{
 		padding: 1rem;
-		border: 6px dashed $yel1!important;
+		border: 6px dashed #F04B4D!important;
 		border-radius: 9%!important;
 		box-shadow: 9px 22px 42px black;
 		margin-bottom: 1rem;
 	}
 	.box3{
 		height: 40vh;
-		background-color: $yel1;
+		background-color: #F04B4D;
 		border-radius:20px;
 		border: 0 solid yellow;
-		box-shadow: 9px 22px 42px $yel1;
+		box-shadow: 9px 22px 42px #F04B4D;
 		transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 		span{
 			font-family: $righteous;
@@ -418,15 +423,16 @@ p{
 	height: auto;
 	h5{
 		font-family: $righteous;
-		color: $bro;
+		color: #ffffff;
 	}
 	p{
 		font-family: $comfortaa;
+		color: #ffffff;
 	}
 	.d-flex .box5{
 		width: 30rem;
 		padding:1rem 1rem 4rem 1rem;
-		background-color: rgba(231, 134, 47, 0.28);
+		background-color: #ffffff38;
 		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 		border-radius: 4px;
 		margin: auto
@@ -463,7 +469,7 @@ p{
 	h6{
 		font-family:$rakesly;
 		letter-spacing: .3rem;
-		color: $yel0;
+		color: #F04B4D;
 		border:5px solid $bro;
 		width: 25%;
 		border-radius: 14px;
@@ -495,8 +501,8 @@ p{
 		cursor: pointer;
 	}
 	.comments{
-		background-color: rgb(244, 174, 121);
-		color: rgb(244, 174, 121);
+		background-color: #F04B4D;
+		color: #F04B4D;
 		font-size: 5px;
 	}
 	.more{
@@ -505,7 +511,7 @@ p{
 }
 //  tenth section
 .ten{
-	background-color: #f04b4d;
+	background-color: #F04B4D;
 	img{
 		margin: 0 1rem;
 	}
@@ -516,7 +522,7 @@ p{
 	div{
 		flex-basis: 37rem;
 		box-shadow: 10px 20px 27px $bla;
-		background-color: #f04b4d;
+		background-color: #F04B4D;
 		font-family: $comfortaa;
 	}
 	.p-2{
@@ -543,7 +549,7 @@ p{
 	}
 	h2{
 		font-family: $righteous;
-		color: $bro;
+		color: #ffffff;
 	}
 	a{
 		font-family: $comfortaa;
