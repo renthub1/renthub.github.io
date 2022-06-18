@@ -41,3 +41,46 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(workSection);
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-143px";
+  }
+}
+
+var preloader=document.getElementById("loader");
+function myfunction(){
+    preloader.style.display='none';
+};
+let typed2 = new Typed('.awrite',{
+strings: ["rent starting ₹65/hr","hourly/daily/monthly available","affordable prices","rent bike now"],
+loop: true,
+typeSpeed:70,
+backSpeed:60,
+smartBackspace: true,
+});
+
+	var swipe = new Swipe(".mySwipe", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+	  $(function() {
+	  $.scrollify({
+		section : ".two,.three,.four,.five,.six,.seven,.eight,.nine,.ten",
+		interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+	  });
+	});
