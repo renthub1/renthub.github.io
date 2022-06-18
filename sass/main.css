@@ -376,6 +376,13 @@ noscript iframe {
   font-family: "Comfortaa", cursive !important;
 }
 
+.section-work-data {
+  background: #F04B4D;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+  margin-bottom: 15rem;
+}
+
 .five {
   background-image: url("images/bg2.webp");
   background-repeat: no-repeat;

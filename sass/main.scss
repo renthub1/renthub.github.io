@@ -325,6 +325,11 @@ p{
 	font-family: $comfortaa;
 }
 }
+.section-work-data{
+	background: #F04B4D;
+	transition: all 0.7s linear;
+	margin-bottom: 15rem;
+}
 // fiveth section
 .five{
 	@include bg('images/bg2.webp');

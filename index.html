@@ -225,6 +225,14 @@ created a variety of plans and packages that are reasonably good and suitable.<b
 hourly, daily and monthly basis in dehradun.
 </p>
 </div>
+<div class=" text-center my-5 fw-bold display-2"> Journey Till Now </div>
+<div class="text-center text-white rounded-pill py-5 section-work-data d-flex flex-wrap justify-content-evenly">
+	 
+	<div class="fs-1 fw-bold">No of bookings<div class="counter-numbers display-3 fw-bolder" data-number="8000">0+</div></div>
+	<div class="fs-1 fw-bold">Happy customers<div class="counter-numbers display-3 fw-bolder" data-number="7760">0+</div></div>
+	<div class="fs-1 fw-bold">Returning customers<div class="counter-numbers display-3 fw-bolder" data-number="7700">0+</div></div>
+	<div class="fs-1 fw-bold">Gappy customers<div class="counter-numbers display-3 fw-bolder" data-number="5000">0+</div></div>
+</div>
 
 <!-- fiveth section -->
 <div id="five" class="five px-2 mt-5">
@@ -308,7 +316,7 @@ hourly, daily and monthly basis in dehradun.
 	  </div>
 		</div>
 		<div class="w-25 heading mt-5">
-			<p class="fs-2 fw-bolder text-center">We are dealing with two wheeler on rent in dehradun right now. we have four honda activa 5g and a honda cliq</p>
+			<p class="fs-1  text-center text-light">We are dealing with two wheeler on rent in dehradun right now. we have four honda activa 5g and a honda cliq</p>
 			</div>
 	</div>
 </div>
@@ -997,6 +1005,50 @@ smartBackspace: true,
     touchScroll:true,
 	  });
 	});
+
+	const workSection = document.querySelector(".section-work-data");
+const workObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+    // console.log(entry);
+
+    // if (entry.isIntersecting == false)
+    if (!entry.isIntersecting) return;
+
+    // animate number counter
+
+    const counterNum = document.querySelectorAll(".counter-numbers");
+
+    const speed = 200;
+
+    counterNum.forEach((curElem) => {
+      const updateNumber = () => {
+        const targetNumber = parseInt(curElem.dataset.number);
+        // console.log(targetNumber);
+        const initialNum = parseInt(curElem.innerText);
+        // console.log(initialNum);
+
+        const incrementNumber = Math.trunc(targetNumber / speed);
+        // console.log(incrementNumber);
+
+        if (initialNum < targetNumber) {
+          curElem.innerText = `${initialNum + incrementNumber}+`;
+          setTimeout(updateNumber, 10);
+        }
+      };
+
+      updateNumber();
+    });
+
+    observer.unobserve(workSection);
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+workObserver.observe(workSection);
   </script>
   </body>
 </html>
