@@ -942,22 +942,8 @@ typeSpeed:70,
 backSpeed:60,
 smartBackspace: true,
 });
-  </script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-	AOS.init();
-</script>
-<script>
-	$(document).ready(function(){
-		$('.img1').waypoint(function(direction){
-			$('.img1').addClass('animate__animated animate__lightSpeedInRight animate__delay-2s')
-		},{
-			offset:'50%',
-		})
-	});
-</script>
-<script>
-	var swiper = new Swiper(".mySwiper", {
+
+var swiper = new Swiper(".mySwiper", {
 	  slidesPerView: 3,
 	  spaceBetween: 30,
 	  autoplay: {
@@ -982,13 +968,26 @@ smartBackspace: true,
           },
         },
 	});
-  </script>
-  <script>
-      var swipe = new Swipe(".mySwipe", {
+
+	var swipe = new Swipe(".mySwipe", {
         effect: "cards",
         grabCursor: true,
       });
-    </script>
+  </script>
+  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+<script>
+	$(document).ready(function(){
+		$('.img1').waypoint(function(direction){
+			$('.img1').addClass('animate__animated animate__lightSpeedInRight animate__delay-2s')
+		},{
+			offset:'50%',
+		})
+	});
+</script>
 <script>
 	$(function() {
 	  $.scrollify({
