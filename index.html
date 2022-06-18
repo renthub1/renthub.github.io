@@ -45,6 +45,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="sass/main.css">
+	
 	<link rel="icon" href= "sass/images/icons/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="120x120" href="sass/images/icons/apple-touch-icon-120x120-precomposed.png"/>
     <link rel="apple-touch-icon" sizes="152x152" href="sass/images/icons/apple-touch-icon-152x152-precomposed.png"/>
@@ -902,6 +903,7 @@ hourly, daily and monthly basis in dehradun.
 
 <!-- script section -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -920,7 +922,9 @@ hourly, daily and monthly basis in dehradun.
     "@type": "Organization"
     }
     </script>
+
   <script>
+
 	  window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -973,6 +977,22 @@ var swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
       });
+
+	  $(function() {
+	  $.scrollify({
+		section : ".two,.three,.four,.five,.six,.seven,.eight,.nine,.ten",
+		interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+	  });
+	});
   </script>
   
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -988,66 +1008,5 @@ var swiper = new Swiper(".mySwiper", {
 		})
 	});
 </script>
-<script>
-	$(function() {
-	  $.scrollify({
-		section : ".two,.three,.four,.five,.six,.seven,.eight,.nine,.ten",
-		interstitialSection : "",
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset : 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:true,
-	  });
-	});
-
-	const workSection = document.querySelector(".section-work-data");
-const workObserver = new IntersectionObserver(
-  (entries, observer) => {
-    const [entry] = entries;
-    // console.log(entry);
-
-    // if (entry.isIntersecting == false)
-    if (!entry.isIntersecting) return;
-
-    // animate number counter
-
-    const counterNum = document.querySelectorAll(".counter-numbers");
-
-    const speed = 200;
-
-    counterNum.forEach((curElem) => {
-      const updateNumber = () => {
-        const targetNumber = parseInt(curElem.dataset.number);
-        // console.log(targetNumber);
-        const initialNum = parseInt(curElem.innerText);
-        // console.log(initialNum);
-
-        const incrementNumber = Math.trunc(targetNumber / speed);
-        // console.log(incrementNumber);
-
-        if (initialNum < targetNumber) {
-          curElem.innerText = `${initialNum + incrementNumber}+`;
-          setTimeout(updateNumber, 10);
-        }
-      };
-
-      updateNumber();
-    });
-
-    observer.unobserve(workSection);
-  },
-  {
-    root: null,
-    threshold: 0,
-  }
-);
-
-workObserver.observe(workSection);
-  </script>
   </body>
 </html>
