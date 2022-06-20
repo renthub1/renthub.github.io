@@ -376,11 +376,15 @@ noscript iframe {
   font-family: "Comfortaa", cursive !important;
 }
 
-.section-work-data {
+.four .section-work-data {
   background: #F04B4D;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
   margin-bottom: 15rem;
+}
+
+.four .section-work-data img {
+  width: 128px;
 }
 
 .five {

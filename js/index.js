@@ -69,18 +69,4 @@ smartBackspace: true,
         grabCursor: true,
       });
 
-	  $(function() {
-	  $.scrollify({
-		section : ".two,.three,.four,.five,.six,.seven,.eight,.nine,.ten",
-		interstitialSection : "",
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset : 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:true,
-	  });
-	});
+	  

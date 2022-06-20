@@ -324,12 +324,16 @@ ol{
 p{
 	font-family: $comfortaa;
 }
-}
 .section-work-data{
 	background: #F04B4D;
 	transition: all 0.1s linear;
 	margin-bottom: 15rem;
 }
+.section-work-data img{
+	width: 128px;
+}
+}
+
 // fiveth section
 .five{
 	@include bg('images/bg2.webp');
