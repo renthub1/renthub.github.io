@@ -64,9 +64,6 @@ backSpeed:60,
 smartBackspace: true,
 });
 
-	var swipe = new Swipe(".mySwipe", {
-        effect: "cards",
-        grabCursor: true,
-      });
+	
 
 	  
