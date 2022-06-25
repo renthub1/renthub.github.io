@@ -68,6 +68,7 @@ smartBackspace: true,
 
 {
     document.getElementById('first_style').removeAttribute('disabled');
+    document.getElementById('animate').removeAttribute('disabled');
 }
 
 	  
