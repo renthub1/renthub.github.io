@@ -51,11 +51,12 @@ function scrollFunction() {
     document.getElementById("header").style.top = "-143px";
   }
 }
-
+//preloader renthub logo script
 var preloader=document.getElementById("loader");
 function myfunction(){
     preloader.style.display='none';
 };
+// type writer script
 let typed2 = new Typed('.awrite',{
 strings: ["rent starting ₹65/hr","hourly/daily/monthly available","affordable prices","rent bike now"],
 loop: true,
@@ -64,6 +65,9 @@ backSpeed:60,
 smartBackspace: true,
 });
 
-	
+
+{
+    document.getElementById('first_style').removeAttribute('disabled');
+}
 
 	  
