@@ -65,10 +65,10 @@ backSpeed:60,
 smartBackspace: true,
 });
 
-$(document).ready(function(){
-{
-    document.getElementById('first_style').removeAttribute('disabled');
-    document.getElementById('animate').removeAttribute('disabled');
-}
-});
+// $(document).ready(function(){
+// {
+//     document.getElementById('first_style').removeAttribute('disabled');
+//     document.getElementById('animate').removeAttribute('disabled');
+// }
+// });
 	  
