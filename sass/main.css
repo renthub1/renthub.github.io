@@ -455,8 +455,8 @@ noscript iframe {
 
 .seven h3 {
   font-family: "Righteous", cursive;
-  border: 8px dashed #F04B4D;
-  border-radius: 4%;
+  border: 8px groove #F04B4D;
+  border-radius: 37px;
   color: #F04B4D;
   -webkit-box-shadow: 7px 6px 36px black;
           box-shadow: 7px 6px 36px black;
@@ -474,8 +474,8 @@ noscript iframe {
 
 .seven .rounded-3 {
   padding: 1rem;
-  border: 6px dashed #F04B4D !important;
-  border-radius: 9% !important;
+  border: 6px inset #F04B4D !important;
+  border-radius: 30px !important;
   -webkit-box-shadow: 9px 22px 42px black;
           box-shadow: 9px 22px 42px black;
   margin-bottom: 1rem;

@@ -390,8 +390,8 @@ p{
 .seven{
 	h3{
 		font-family: $righteous;
-		border: 8px dashed $yel1;
-		border-radius: 4%;
+		border: 8px groove $yel1;
+		border-radius: 37px;
 		color: $yel1;
 		box-shadow: 7px 6px 36px $bla;
 	}
@@ -405,8 +405,8 @@ p{
 	}
 	.rounded-3{
 		padding: 1rem;
-		border: 6px dashed $yel1!important;
-		border-radius: 9%!important;
+		border: 6px inset $yel1!important;
+		border-radius: 30px!important;
 		box-shadow: 9px 22px 42px black;
 		margin-bottom: 1rem;
 	}
