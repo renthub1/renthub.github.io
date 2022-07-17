@@ -12,7 +12,7 @@ $comfortaa:"Comfortaa", cursive!important;
 $whi:white;
 $bro:#3c0f0f;
 $yel0:#e06d07;
-$yel1:#f27c22;
+$yel1:#F04B4D;
 $bla:black;
 
 //mixins
@@ -78,7 +78,7 @@ noscript iframe{
   .progress-bar {
 	height: 10px;
 	background: #F04B4D;
-	background-color: #F04B4D;
+	background-color: $yel1;
 	width: 0%;
   }
 // second section properties 
@@ -101,7 +101,7 @@ noscript iframe{
 	color: #000000;
 }
 .menu li:hover{
-	color: #F04B4D;
+	color: $yel1;
 	transition: .6s;
 }
 .menu .animation {
@@ -109,7 +109,7 @@ noscript iframe{
 	height: 6px;
 	top: -19px;
 	z-index: 0;
-	background: #F04B4D;
+	background: $yel1;
 	border-radius: 8px;
 	transition: all .5s ease 0s; }
   
@@ -271,14 +271,14 @@ p{
 }
 h4{
 	font-family: $righteous;
-	color: #F04B4D;
+	color: $yel1;
 }
 h5{
 	font-family: $righteous;
-	color: #F04B4D;
+	color: $yel1;
 }
 li{
-	color: #F04B4D;
+	color: $yel1;
 }
 .progress-bar{
 	width: 100%;
@@ -298,12 +298,12 @@ ol{
 .cap1{
 	margin-left:17rem!important;
 	margin-bottom:36rem!important;
-	background: #F04B4D;
+	background: $yel1;
 }
 .cap2{
 	margin-left:17rem!important;
 	margin-bottom:4rem!important;
-	background: #F04B4D;
+	background: $yel1;
 }
 .cap2 a:hover{
 	color: $whi!important;
@@ -312,20 +312,20 @@ ol{
 .cap3{
 	margin-left:25rem!important;
 	margin-bottom:21rem!important;
-	background: #F04B4D;
+	background: $yel1;
 }
 }
 // fourth section
 .four{ 
  h6{
 	font-family: $righteous;
-	color: #F04B4D;
+	color: $yel1;
 }
 p{
 	font-family: $comfortaa;
 }
 .section-work-data{
-	background: #F04B4D;
+	background: $yel1;
 	transition: all 0.1s linear;
 	margin-bottom: 15rem;
 }
@@ -367,7 +367,7 @@ span{
 }
 .box2 .but:hover {
 	box-shadow: 0 0 5px #e06d07;
-	background-color: #F04B4D;
+	background-color: $yel1;
 	transition: 0.5s;
 	color: white; 
 }
@@ -380,7 +380,7 @@ span{
 }	
 h2{
 	font-family: $righteous;
-	color: #F04B4D;
+	color: $yel1;
 }
 p{
 	font-family: $comfortaa;
@@ -390,32 +390,32 @@ p{
 .seven{
 	h3{
 		font-family: $righteous;
-		border: 8px dashed #F04B4D;
+		border: 8px dashed $yel1;
 		border-radius: 4%;
-		color: #F04B4D;
+		color: $yel1;
 		box-shadow: 7px 6px 36px $bla;
 	}
 	h4{
 		font-family: $righteous;
-		color: #F04B4D;
+		color: $yel1;
 	}
 	p{
 		font-family: $comfortaa;
-		color: #F04B4D;
+		color: $yel1;
 	}
 	.rounded-3{
 		padding: 1rem;
-		border: 6px dashed #F04B4D!important;
+		border: 6px dashed $yel1!important;
 		border-radius: 9%!important;
 		box-shadow: 9px 22px 42px black;
 		margin-bottom: 1rem;
 	}
 	.box3{
 		height: 40vh;
-		background-color: #F04B4D;
+		background-color: $yel1;
 		border-radius:20px;
 		border: 0 solid yellow;
-		box-shadow: 9px 22px 42px #F04B4D;
+		box-shadow: 9px 22px 42px $yel1;
 		transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 		span{
 			font-family: $righteous;
@@ -478,7 +478,7 @@ p{
 	h6{
 		font-family:$rakesly;
 		letter-spacing: .3rem;
-		color: #F04B4D;
+		color: $yel1;
 		border:5px solid $bro;
 		width: 25%;
 		border-radius: 14px;
@@ -510,8 +510,8 @@ p{
 		cursor: pointer;
 	}
 	.comments{
-		background-color: #F04B4D;
-		color: #F04B4D;
+		background-color: $yel1;
+		color: $yel1;
 		font-size: 5px;
 	}
 	.more{
@@ -520,7 +520,7 @@ p{
 }
 //  tenth section
 .ten{
-	background-color: #F04B4D;
+	background-color: $yel1;
 	img{
 		margin: 0 1rem;
 	}
@@ -531,7 +531,7 @@ p{
 	div{
 		flex-basis: 37rem;
 		box-shadow: 10px 20px 27px $bla;
-		background-color: #F04B4D;
+		background-color: $yel1;
 		font-family: $comfortaa;
 	}
 	.p-2{
@@ -564,8 +564,7 @@ p{
 		font-family: $comfortaa;
 	}
 }
-// media query
-
+// media query started
 @media(max-width:1400px){
 	.logo{
 		width: 100%!important;
