@@ -27,7 +27,7 @@ html{
 	scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
-	width: 1.2rem;
+	width: 2rem;
 }
 ::-webkit-scrollbar-track{
 	background-color: $bla;
@@ -35,7 +35,7 @@ html{
 ::-webkit-scrollbar-thumb{
 	background-color: #F04B4D;
 	border-radius: 1rem;
-	border: 2rem solid #F04B4D;
+	border: 0.5rem solid transparent;
 	background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover{
