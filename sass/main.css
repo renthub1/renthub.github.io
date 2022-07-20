@@ -543,11 +543,6 @@ noscript iframe {
   transition: 0.3s;
   cursor: pointer;
 }
-.nine .comments {
-  background-color: #F04B4D;
-  color: #F04B4D;
-  font-size: 5px;
-}
 .nine .more {
   font-family: "Comfortaa", cursive !important;
 }
